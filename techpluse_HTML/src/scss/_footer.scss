@@ -1,0 +1,10 @@
+.footer-section {
+    .footer-logo {
+        max-width: 120px;
+        width: 100%;
+
+        @include screen(sm) {
+            max-width: 180px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// font variables
+$base-font: "Montserrat",
+sans-serif;
+
+// color variables
+$primary: #19352D;
+$primary2: #C5FF4A;
+$primary3: #AADC40;
+$primary4: #225143;
+$secondary: #FF8049;
+$secondary2: #49FFC8;
+$body-text: #CBD6CC;
+
+// color variables
+$n0: #ffffff;
+$n10: #fafafb;
+$n20: #f5f6f7;
+$n30: #ebecef;
+$n40: #dfe0e4;
+$n50: #c1c4cc;
+$n60: #b2b6bf;
+$n70: #a6aab5;
+$n80: #979ca8;
+$n90: #888e9c;
+$n100: #798090;
+$n200: #6a7283;
+$n300: #5b6477;
+$n400: #4f586d;
+$n500: #404a60;
+$n600: #343e56;
+$n700: #222e48;
+$n800: #13203b;
+$n900: #071431;
+
+
+// transition variables
+$transition: all 0.3s ease-in-out;

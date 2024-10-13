@@ -1,0 +1,67 @@
+//Service Style
+.service-right-box1{
+    border: 1px solid rgba(21, 21, 21, 0.20);
+    .servie-list{
+        li{
+            a{
+                border: 1px solid rgba(21, 21, 21, 0.20);
+                transition: all 0.4s;
+                &:hover{
+                    background: var(--p1);
+                    color: var(--n0);
+                    border-color: var(--p1);
+                }
+            }
+        }
+    }
+}
+
+.more-service{
+    .testimonial-item{
+        border: 1px solid var(--n900);
+        img{
+            filter: brightness(0);
+            transition: all 0.4s;
+        }
+        p{
+           color: var(--pra-clr);
+        }
+        &:hover{
+            border-color: var(--p1);
+            img{
+                filter: brightness(25);
+            }
+            span,
+            a{
+                color: var(--n0);
+            }
+        }
+    }
+}
+
+
+.srecive-get{
+    form{
+        input,
+        textarea{
+            width: 100%;
+            padding: 14px 28px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            color: var(--n0);
+            outline: none;
+            border-radius: 0;
+        }
+        ::placeholder{
+            color: var(--n0);
+            opacity: 0.5;
+        }
+    }
+}
+
+.cmn-dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #605E5D;
+}
+//Service Style

@@ -1,0 +1,36 @@
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+NZ:wght@100..400&display=swap');
+
+// font variables
+$font-barlow: "Barlow Condensed",
+sans-serif;
+$font-playwrite: "Playwrite NZ",
+cursive;
+
+// color variables
+$primary: #BC9E59;
+$secondary: #F80000;
+$secondary2: #2EBB79;
+
+// color variables
+$n0: #FFFFFF;
+$n10: #ffffff1a;
+$n15: #ffffff26;
+$n25: #EDE9DF;
+$n30: #ffffff4d;
+$n40: #1324301a;
+$n50: #13243033;
+$n75: #686C6F;
+$n90: #00000080;
+$n100: #132430;
+$test: #13243033;
+
+$gradient-black: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.80) 100%);
+
+// transition variables
+$transition: all 0.3s ease-in-out;
+$transition-slow: all 0.5s ease-in-out;
+
+// box shadow variables
+$shadow-1: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),0px 20px 24px -6px rgba(16, 24, 40, 0.08);
+$shadow-2: 0 0 60px rgba(0, 0, 0, .3);;

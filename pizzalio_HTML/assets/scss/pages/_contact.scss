@@ -1,0 +1,133 @@
+// Contact Style
+.contact-wrap{
+    border-radius: 32px;
+    background: url(../../assets/images/banner/contact-bg.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    .contact-item{
+        input,
+        textarea{
+            width: 100%;
+            background: var(--n0);
+            border-radius: 16px;
+            padding: 14px 32px;
+            border: unset;
+            color: var(--n900);
+            outline: none;
+        }
+        &::placeholder{
+            color: var(--n900);
+        }
+    }
+    .contact-bg-shape{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.mcontact-wrapper{
+    border-radius: 32px;
+    .mcontact-item{
+        textarea,
+        input{
+            border-radius: 16px;
+            background: var(--bg1);
+            border: 1px solid rgba(24, 29, 32, 0.20);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--n100);
+            outline: none;
+            padding: 14px 24px;
+        }
+        ::placeholder{
+            color: var(--n100);
+        }
+    }
+}
+
+.contact-section{
+    .best-pizza-open{
+        position: absolute;
+        bottom: -150px;
+        right: -100px;
+        width: 510px;
+        z-index: -1;
+    }
+    @include maxQuery(767){
+        .best-pizza-open{
+           width: 100px;
+           bottom: -10px;
+            right: -1px;
+        }
+    }
+}
+.open-hourswrap{
+    .cmn-social{
+        li{
+            a{
+                transition: all 0.4s;
+                i{
+                    transition: all 0.4s;
+                }
+                &:hover{
+                    background: var(--p1);
+                    i{
+                        color: var(--n0);
+                    }
+                }
+            }
+        }
+    }
+    .open-dot{
+        border-bottom: 1px dashed;
+        border-color: var(--n900);
+        width: 130px;
+    }
+    @include maxQuery(991){
+        .open-dot{
+            width: 30px;
+        }   
+    }
+    @include maxQuery(575){
+        .open-dot{
+            width: 10px;
+        }   
+    }
+}
+.china-tel-icon{
+    .china-icon{
+        @include box(60);
+    }
+    &:hover{
+        a{
+            color: var(--n0);
+        }
+    }
+}
+.cmn-china{
+    @include box(70);
+    border-radius: 8px;
+    border: 1px solid var(--n0);
+    transition: all 0.4s;
+    i{
+        font-size: 24px;
+    }
+    &:hover{
+        background: var(--p1);
+        border-color: var(--p1);
+    }
+    @include maxQuery(1399){
+        @include box(50);
+        i{
+            font-size: 18px;
+        }
+    }
+    @include maxQuery(991){
+        @include box(40);
+        i{
+            font-size: 18px;
+        }
+    }
+}
+// Contact Style 

@@ -1,0 +1,145 @@
+//Footer Section//
+.footer{
+    z-index: 1;
+    .biman-b{
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        animation: lf 2s linear infinite;
+        z-index: -1;
+    }
+    .biman-t{
+        position: absolute;
+        top: 24px;
+        left: 0;
+        animation: lf 2s linear infinite;
+        z-index: -1;
+    }
+    @include maxQuery(1399){
+        .biman-b{
+            opacity: 0.5;
+        }
+        .biman-t{
+            opacity: 0.5;
+        }
+    }
+}
+@keyframes lf  {
+    50%{
+        transform: translateX(-10px);
+    }
+}
+.footer-top{
+    .f-ring{
+        position: absolute;
+        top: 50%;
+        right: 32%;
+        animation: fadeIn2nd 2s linear infinite;
+    }
+    .f-virus{
+        position: absolute;
+        top: 40px;
+        left: 25%;
+        animation: fadeInUp 5s linear infinite;
+    }
+    .f-tritch{
+        position: absolute;
+        bottom: 70px;
+        left: 25%;
+        animation: zin 2s linear infinite;
+    }
+    .f-tablet{
+        position: absolute;
+        left: 28%;
+        top: 40%;
+        animation: updown 2s linear infinite;
+    }
+}
+.footer-link{
+    li{
+        a{
+            position: relative;
+            transition: all 0.5s;
+            &::before{
+                position: absolute;
+                left: 10px;
+                top: 2px;
+                width: 2px;
+                height: 80%;
+                background: var(--b75);
+                content: "";
+                transition: all 0.5s;
+                opacity: 0;
+                visibility: hidden;
+            }
+            &:hover{
+                padding-left: 10px;
+                &::before{
+                    left: 0;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+.max-408{
+    max-width: 408px;
+}
+.footer-newsletter-logo{
+    width: 80px;
+}
+.newsletter-form{
+    height: 64px;
+    .envelop{
+        position: absolute;
+        left: 14px;
+        top: 22px;
+        i{
+            font-size: 20px;
+        }
+    }
+    button,
+    input{
+        background: transparent;
+        height: 55px;
+        border-radius: 0;
+        outline: none;
+        color: var(--n0);
+    }
+    input{
+        padding: 0px 16px 0 30px;
+    }
+    ::placeholder{
+        color: var(--n0);
+    }
+    button{
+        background: var(--s1);
+        outline: none;
+        @include box(48);
+        i{
+            color: var(--n900);
+        }
+    }
+    @include maxQuery(1399){
+        .envelop{
+           display: none;
+        }
+        input{
+            padding: 0px 16px 0 16px;
+        }
+    }
+    @include maxQuery(575){
+        button,
+        input{
+            height: 40px;
+            height: 40px;
+            padding: 5px 16px;
+            font-size: 16px;
+        }
+    }
+}
+.copyright{
+    border-top: 1px solid var(--n0);
+}
+//Footer Section//

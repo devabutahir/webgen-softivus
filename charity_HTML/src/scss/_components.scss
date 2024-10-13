@@ -1,0 +1,252 @@
+// // button
+.cart-btn {
+    @include box(36);
+    position: relative;
+    color: $n0;
+    border: 1px solid $n0;
+    transition: $transition;
+    z-index: 1;
+    font-weight: 600;
+    box-sizing: border-box;
+
+    @include screen(sm) {
+        @include box(48);
+    }
+
+    .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        @include box(20);
+        background: $secondary;
+        color: $n50;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: $secondary;
+    }
+}
+
+.btn-primary {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: $transition;
+    overflow: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+    background: $secondary;
+    color: $n50;
+
+    @include screen(sm) {
+        padding: 12px 24px;
+    }
+
+    &.alt-color {
+        color: $n0;
+        background: $primary;
+    }
+
+    &.hover-primary {
+        &:hover {
+            background: $primary;
+        }
+    }
+
+    &:hover {
+        background: $primary2;
+        color: $n0;
+
+        &.alt-color {
+            color: $n50;
+            background: $secondary;
+        }
+    }
+}
+
+.btn-secondary {
+    @extend .btn-primary;
+    background: $secondary;
+    color: $n0;
+
+    &.alt-color {
+        color: $n50;
+        background: $secondary2;
+    }
+
+    &:hover {
+        background: $secondary2;
+        color: $n50;
+
+        &.alt-color {
+            color: $n0;
+            background: $secondary;
+        }
+    }
+}
+
+.btn-n0 {
+    @extend .btn-primary;
+    background: $n0;
+    color: $n50;
+
+    &:hover {
+        background: $n50;
+        color: $n0;
+    }
+}
+
+
+.link-btn {
+    transition: $transition;
+
+    &:hover {
+        color: $secondary !important;
+    }
+}
+
+.popup-btn {
+    .play-icon {
+        @include box(60);
+        background: $n0;
+        color: $primary;
+        transition: $transition;
+
+        &:hover {
+            background: $primary;
+            color: $n0;
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $n0;
+            z-index: -10;
+            border-radius: inherit;
+            transition: $transition;
+            animation: scaleUp 2s linear infinite;
+        }
+
+        &::before {
+            animation-delay: .5s;
+        }
+    }
+}
+
+// .breadcrumb
+.breadcrumb {
+    .breadcrumb-item {
+        color: $n0;
+        transition: $transition;
+        text-transform: capitalize;
+
+        &:hover {
+            color: $secondary;
+        }
+
+
+        &.active {
+            color: $secondary;
+            text-transform: capitalize;
+        }
+
+        &:before {
+            color: $n0;
+        }
+    }
+}
+
+.input-area {
+    width: 100%;
+    border: 1px solid rgba($n0, 0.25);
+    padding: 8px 16px;
+    color: $n0;
+    font-size: 16px;
+
+    &::placeholder {
+        color: $n0;
+    }
+
+    &:focus {
+        outline: 1px solid $secondary;
+    }
+
+    @include screen(sm) {
+        padding: 12px 24px;
+    }
+
+    @include screen(lg) {
+        padding: 16px 32px;
+    }
+}
+
+.placeholder-n0 {
+    &::placeholder {
+        color: $n0;
+        font-weight: 500;
+    }
+}
+
+.placeholder-n50 {
+    &::placeholder {
+        color: $n50;
+        font-weight: 500;
+    }
+}
+
+.input-icon {
+    width: 48px;
+    height: 48px;
+}
+
+// input type checkbox
+.input-radiobox {
+    .checkbox {
+        position: relative;
+        border-radius: 4px;
+        padding: 12px;
+        background: $secondary2;
+    }
+
+    input:checked+.checkbox {
+        background: $primary;
+    }
+}
+
+// input type checkbox
+.input-checkbox {
+    .checkbox {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        background: $n10;
+        cursor: pointer;
+    }
+
+    input:checked+.checkbox {
+
+        &:before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 6px;
+            height: 12px;
+            border: solid $secondary2;
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+        }
+    }
+}

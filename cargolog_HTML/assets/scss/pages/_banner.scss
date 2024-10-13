@@ -1,0 +1,141 @@
+//Banner Section
+.hero-section{
+    .hero-content{
+        padding: 80px 0 94px;
+        p{
+            max-width: 740px;
+        }
+    }
+    .hero-countinner{
+        width: 468px;
+        .hero-countitem{
+            width: 388px;
+            margin: 0 auto;
+            text-align: center;
+            &:not(:last-child){
+                border-bottom: 1px solid var(--p200);
+                padding-bottom: 34px;
+            }
+            &:not(:first-child){
+                padding-top: 10px;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .hero-content{
+           .display-three{
+            font-size: 56px;
+           }
+        }
+        .hero-countinner{
+            width: 310px;
+            .hero-countitem{
+                width: 310px;
+                &:not(:last-child){
+                    padding-bottom: 25px;
+                }
+                &:not(:first-child){
+                    padding-top: 8px;
+                }
+                .display-two{
+                    font-size: 48px;
+                }
+               h5{
+                font-size: 18px;
+               }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .hero-content{
+            padding: 60px 0 94px;
+        }
+        p{
+            max-width: 560px !important;
+        }
+    }
+    @include maxQuery(991){
+        .hero-countinner{
+            width: 230px;
+            .hero-countitem{
+                width: 230px;
+                &:not(:last-child){
+                    padding-bottom: 25px;
+                }
+                &:not(:first-child){
+                    padding-top: 8px;
+                }
+                .display-two{
+                    font-size: 36px;
+                }
+               h5{
+                font-size: 16px;
+                font-weight: 400;
+               }
+            }
+        }
+        .hero-content{
+            .display-three{
+             font-size: 42px;
+            }
+            p{
+                max-width: 400px !important;
+            }
+         }
+    }
+}
+.hero-countwrap{
+    position: absolute;
+    top: 190px;
+    right: 200px;
+    z-index: 1;
+    .textcircle{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background: var(--n0);
+        position: absolute;
+        left: -140px;
+        top: 50%;
+        transform: translateY(-50%);
+        .texta {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .area-thumb{
+            background: var(--p1);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+    }
+    @include maxQuery(1650){
+        right: 0;
+    }
+    @include maxQuery(767){
+        margin-top: -50px;
+        top: initial;
+        position: initial;
+        right: 0;
+        .hero-countinner{
+            width: initial;
+            .hero-countitem{
+                border: unset !important;
+                padding-bottom: 0 !important;
+            }
+        }
+    }
+    @include maxQuery(400){
+        .textcircle{
+            display: none;
+        }
+    }
+}
+//Banner Section

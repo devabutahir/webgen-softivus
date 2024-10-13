@@ -1,0 +1,311 @@
+aside {
+
+    .header-section {
+        .menu-control-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: $transition-slow;
+            z-index: 10;
+
+            @media (max-width: 991px) {
+                background: $primary-300;
+            }
+
+            @include screen(lg) {
+                width: 160px;
+                border-right: 1px solid $n900;
+                height: 100vh;
+                mix-blend-mode: difference;
+            }
+
+            @include screen(xl) {
+                width: 200px;
+            }
+
+            @include screen(4xl) {
+                width: 260px;
+            }
+        }
+
+        .header-logo {
+            max-width: 80px;
+            max-height: 40px;
+            width: 100%;
+            height: 100%;
+
+            @include screen(md) {
+                max-width: 100px;
+                max-height: 60px;
+            }
+
+            @include screen(lg) {
+                max-width: 120px;
+                max-height: 80px;
+            }
+        }
+
+        .menu-toggle-btn {
+            .menu-toggle-icon {
+                .bar {
+                    width: 20px;
+                    height: 2px;
+                    background: $primary-500;
+                    transition: $transition-slow;
+
+                    @include screen(md) {
+                        width: 30px;
+                    }
+
+                    @include screen(lg) {
+                        width: 40px;
+                    }
+
+                }
+            }
+
+            .close-text {
+                visibility: hidden;
+                opacity: 0;
+                overflow: hidden;
+                transition: $transition-slow;
+                transform: translateY(-10px);
+            }
+
+            .menu-text {
+                visibility: visible;
+                opacity: 1;
+                transition: $transition-slow;
+                transform: translateY(0px);
+            }
+
+            .menu-text,
+            .close-text {
+                color: $primary-500;
+
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+
+            &.active {
+                .menu-toggle-icon {
+                    .bar-1 {
+                        transform: rotate(45deg);
+                    }
+
+                    .bar-2 {
+                        opacity: 0;
+                    }
+
+                    .bar-3 {
+                        transform: rotate(-45deg);
+                        margin-top: -18px;
+                    }
+                }
+
+                .menu-text {
+                    visibility: hidden;
+                    opacity: 0;
+                    overflow: hidden;
+                    transition: $transition-slow;
+                    transform: translateY(-10px);
+                }
+
+                .close-text {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: $transition-slow;
+                    transform: translateY(0px);
+                }
+            }
+        }
+
+        .social-list {
+            li {
+                a {
+                    @include box(40);
+                    border-radius: unset;
+                    border-top: 1px solid $primary-500;
+                    border-bottom: 1px solid $primary-500;
+                    transition: $transition-slow;
+
+                    &:hover {
+                        background: $primary-300;
+                        color: $n900;
+                    }
+                }
+            }
+        }
+
+        .vr-line {
+            width: 1px;
+            height: 100px;
+            background: $primary-500;
+        }
+
+        .menu-items-area {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 0;
+            max-height: 80vh;
+            height: 100%;
+            transition: $transition-slow;
+            z-index: 100;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: $primary-500;
+
+            @include screen(lg) {
+                max-height: 100vh;
+                top: 0;
+                margin-left: 160px;
+                // border-right: 1px solid $n900;
+            }
+
+            @include screen(xl) {
+                margin-left: 200px;
+            }
+
+            @include screen(4xl) {
+                margin-left: 260px;
+            }
+
+            &.active {
+                width: 100%;
+                padding: 20px;
+
+                @include screen(md) {
+                    width: calc(100% - 30%);
+                }
+
+                @include screen(lg) {
+                    width: calc(100% - 160px);
+                }
+
+                @include screen(xl) {
+                    width: calc(100% - 200px);
+                    padding: 30px;
+                }
+
+                @include screen(4xl) {
+                    width: calc(100% - 260px);
+                    padding: 40px;
+                }
+            }
+        }
+
+        .nav-menu-items {
+            @include screen(lg) {
+                width: 50%;
+            }
+
+            .menu-link,
+            .menu-item {
+                position: relative;
+                color: $n0;
+                transition: $transition;
+                text-transform: uppercase;
+                padding: 6px;
+                padding-left: 16px;
+                border-bottom: 1px solid $n0;
+
+                @include screen(lg) {
+                    padding: 10px;
+                    padding-left: 32px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    background: $primary-400;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    background: $secondary-50;
+                    transition: $transition-slow;
+
+                    @include screen(lg) {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                &:hover {
+                    color: $secondary-50;
+
+                    &::after {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+            .menu-item.active button,
+            .menu-link a.active {
+                color: $secondary-50;
+            }
+
+            @include screen(lg) {
+                .menu-item {
+                    position: relative;
+
+                    .sub-menu {
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateX(10%);
+                        transition: $transition-slow;
+                    }
+
+                    &:hover {
+                        .sub-menu {
+                            transform: translateX(0);
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 991px) {
+                .menu-item {
+                    .sub-menu {
+                        opacity: 0;
+                        visibility: hidden;
+                        height: 0px !important;
+                        transition: height 0.8s ease-in-out, opacity 0.8ms ease-in-out, visibility 0.8ms ease-in-out;
+                    }
+
+                    &.active {
+                        .sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            height: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

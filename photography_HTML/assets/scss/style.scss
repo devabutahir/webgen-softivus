@@ -1,0 +1,41 @@
+/*============================================ 
+# Template Name: Photography
+# Version: 1.0
+# Date: 01-07-2024
+# Author: pixelaxis
+# Author URI: https://themeforest.net/user/pixelaxis/portfolio
+# Description: Photography - HTML Template
+============================================*/
+
+/*============================================ 
+======== Table of Css Content =========
+# Typography
+# Normalize 
+# Global style
+# Header Area
+# Banner Area
+# Section Area
+# Footer Area
+============================================*/
+
+// CSS Plugin import
+@import "../css/bootstrap.min.css";
+@import "../css/plugins/fontawesome.min.css";
+@import "../css/plugins/nice-select.css";
+@import "../css/plugins/magnific-popup.css";
+@import "../css/plugins/swiper.min.css";
+@import "../css/plugins/splitting.min.css";
+@import "../css/plugins/tabler-icons.min.css";
+@import "../css/plugins/jquery-ui-min.css";
+@import "../css/plugins/odometer-min.css";
+@import "../css/plugins/animate.css";
+
+// Scss main
+@import "main/_variable";
+@import "main/_mixins";
+@import "main/_typography";
+@import "main/_global";
+
+// Scss Pages
+@import "pages/_navbar";
+@import "pages/_section";

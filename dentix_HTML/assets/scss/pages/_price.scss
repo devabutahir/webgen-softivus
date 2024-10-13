@@ -1,0 +1,74 @@
+//pricing Plan
+.price-item{
+    .price-list{
+        li{
+            padding-left: 10px;
+            position: relative;
+            color: var(--n900);
+            display: flex;
+            align-items: center;
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: var(--n900);
+            }
+        }
+    }
+}
+.price-list{
+    li{
+        padding-left: 10px;
+        position: relative;
+        color: var(--n900);
+        display: flex;
+        align-items: center;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--n900);
+        }
+        @include maxQuery(1399){
+            font-size: 14px;
+        }
+    }
+}
+.price-item-active{
+    background: var(--s2);
+    h4,
+    p,
+    li
+    {
+        color: var(--n0);
+    }
+    .cmn-btn{
+        background: var(--s1);
+        color: var(--n900);
+    }
+    .price-list{
+        li{
+            color: var(--n0);
+            &::before{
+                background: var(--n0);
+            }
+        }
+    }
+}
+//pricing Plan
+
+//Common CalltoAction
+.common-calltowrap{
+    li{
+        .icons{
+            @include box(48);
+        }
+    }
+}
+//Common CalltoAction

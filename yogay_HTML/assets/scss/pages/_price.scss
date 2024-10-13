@@ -1,0 +1,24 @@
+//Pricing Plan
+.pricing-item{
+    &.active,
+    &:hover{
+        background: var(--p1);
+        h2,li{
+            color: var(--n0);
+        }
+        .bus-btn{
+            background: var(--n0);
+            color: var(--n50);
+        }
+        .dot{
+            background: var(--n0);
+        }
+    }
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    background: var(--n50);
+    border-radius: 50%;
+}
+//Pricing Plan

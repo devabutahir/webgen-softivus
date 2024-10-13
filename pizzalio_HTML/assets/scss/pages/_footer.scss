@@ -1,0 +1,196 @@
+//Footer Section//
+.footer{
+    z-index: 1;
+}
+@keyframes lf  {
+    50%{
+        transform: translateX(-10px);
+    }
+}
+.footer-widget{
+    h5{
+        display: inline-block;
+        position: relative;
+        padding-bottom: 16px;
+        &::before{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            width: 60%;
+            height: 3px;
+            background: var(--p2);
+        }
+    }
+    .footer-link{
+        li{
+            a{
+                font-weight: 500;
+                position: relative;
+                transition: all 0.5s;
+                &::before{
+                    position: absolute;
+                    left: 10px;
+                    top: 2px;
+                    width: 2px;
+                    height: 80%;
+                    background: var(--p1);
+                    content: "";
+                    transition: all 0.5s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover{
+                    padding-left: 10px;
+                    color: var(--p1);
+                    &::before{
+                        left: 0;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    .footer-mapping{
+        li{
+            a{
+                transition: all 0.4s;
+                &:hover{
+                    color: var(--p1);
+                }
+            }
+        }
+    }
+    .cmn-social{
+        li{
+            a{
+                transition: all 0.4s;
+                &:hover{
+                    background: var(--p1);
+                    i{
+                        color: var(--n0);
+                    }
+                }
+            }
+        }
+    }
+}
+.max-320{
+    max-width: 320px;
+}
+
+//Footer Section//
+
+//Order Newsletter 
+.order-newsletter{
+    z-index: 1;
+    .fresh-element{
+        position: absolute;
+        top: 30%;
+        left: 200px;
+    }
+    .slice-element{
+        position: absolute;
+        right: 100px;
+        top: 0%;
+        animation: zoomin 8s linear infinite;
+        max-width: 420px;
+    }
+    @include maxQuery(1599){
+        .fresh-element{
+            top: 30%;
+            left: 20px;
+        }
+        .slice-element{
+            right: 1px;
+            top: 0%;
+        }
+    }
+    @include maxQuery(1399){
+        .fresh-element{
+            left: 2px;
+        }
+        .slice-element{
+            right: 1px;
+            max-width: 300px;
+        }
+    }
+    @include maxQuery(1199){
+        .fresh-element{
+            top: 20%;
+            max-width: 100px;
+            z-index: -1;
+        }
+        .slice-element{
+            top: 5%;
+            max-width: 200px;
+            z-index: -1;
+        }
+    }
+    @include maxQuery(767){
+        .fresh-element{
+            top: 1%;
+            max-width: 70px;
+        }
+        .slice-element{
+           display: none;
+        }
+    }
+}
+@keyframes zoomin {
+    50%{
+        transform: scale(1.1);
+    }
+}
+.order-newsletter-content{
+    .cmn-sub{
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--p1);
+        font-family: var(--sub-font);
+    }
+    .newsletter-form{
+        max-width: 574px;
+        margin: 0 auto;
+        border-radius: 8px;
+        button,
+        input{
+            background: transparent;
+            height: 55px;
+            border-radius: 0;
+            outline: none;
+            color: var(--n100);
+            font-size: 14px;
+        }
+        input{
+            padding: 18px 14px;
+        }
+        ::placeholder{
+            color: var(--n100);
+        }
+        button{
+            background: var(--p1);
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--n900);
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 8px;
+            i{
+                color: var(--n900);
+            }
+        }
+        @include maxQuery(575){
+            button,
+            input{
+                height: 40px;
+                height: 40px;
+                padding: 5px 16px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+//Order Newsletter 

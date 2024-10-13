@@ -1,0 +1,54 @@
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// font variables
+$base-font: "Lato",
+sans-serif;
+$heading-font: "Lato",
+sans-serif;
+
+// color variables
+$primary-10: #FFFCEE;
+$primary-50: #F9FBF7;
+$primary-75: #E7EEDF;
+$primary-100: #DDE7D1;
+$primary-200: #CEDDBD;
+$primary-300: #C4D6B0;
+$primary-400: #89967B;
+$primary-500: #78836B;
+
+$secondary-50: #FE5B2C;
+
+// color variables
+$n0: #FFFFFF;
+$n10: #FBFBFB;
+$n20: #F6F6F6;
+$n30: #EEEDED;
+$n40: #E3E2E2;
+$n50: #CAC7C7;
+$n60: #BDBAB9;
+$n70: #B2AEAE;
+$n80: #A5A1A1;
+$n90: #989393;
+$n100: #8B8686;
+$n200: #7F7978;
+$n300: #726B6B;
+$n400: #67605F;
+$n500: #5A5352;
+$n600: #504747;
+$n700: #413837;
+$n800: #342A29;
+$n900: #291F1E;
+$n1000: #000000;
+// transition variables
+$transition: all 0.3s ease-in-out;
+$transition-slow: all 0.5s ease-in-out;
+
+// screen variables
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+$screen-3xl-min: 1600px;
+$screen-4xl-min: 1800px;

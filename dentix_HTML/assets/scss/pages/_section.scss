@@ -1,0 +1,53 @@
+//consultation
+.max-710{
+    max-width: 710px;
+}
+.consaltation-thumbwrap{
+    height: 713px;
+    width: 700px;
+    position: absolute;
+    right: 150px;
+    top: 0;
+    .thumb{
+        width: 430px;
+        img{
+            width: 100%;
+        }
+    }
+    .cthumb-root1{
+        transform: rotate(-20deg);
+    }
+    .cthumb-root2{
+        transform: rotate(20deg);
+        margin-left: 120px;
+        margin-top: -80px;
+    }
+    .cthumb-root3{
+        transform: rotate(-10deg);
+        margin-top: -220px;
+        margin-left: -100px;
+    }
+    @include maxQuery(1500){
+        width: 500px;
+        height: 600px;
+        top: 50%;
+        transform: translateY(-50%);
+        .thumb{
+            width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        width: 400px;
+        height: 500px;
+        .thumb{
+            width: 200px;
+        }
+    }
+    @include maxQuery(1199){
+        display: none !important;
+    }
+}
+//consultation

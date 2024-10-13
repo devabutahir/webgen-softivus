@@ -1,0 +1,37 @@
+/*---------------------------------------
+    Template Name:  bankko - Banking  & Finance Consultancy
+    Description:    Banking  & Finance Consultancy
+    Author Name:    Pixelaxis
+    Author URI:     https://themeforest.net/user/pixelaxis
+    Theme URI:      https://themeforest.net/user/pixelaxis
+    Version:        1.0
+-----------------------------------------
+             Table of contents
+-----------------------------------------
+    color variables
+    Typography 
+    mixins
+    Pages styles
+---------------------------------------*/
+
+// plugins css
+@import "../assets/css/aos@2.3.1-dist-aos.css";
+@import "../assets/css/swiper.min.css";
+@import "../assets/css/odometer.min.css";
+@import "../assets/css/select2.min.css";
+@import "../assets/css/bootstrap-custom.css";
+@import "../assets/fonts/tabler.min.css";
+@import "../assets/css/apexcharts.css";
+
+// Sass files
+//@import "bootstrap-custom"; // we use this file to customize bootstrap, after customize bootstrap we use customize version ( bootstrap-custom.css )
+@import "variables";
+@import "typography";
+@import "mixins";
+@import "components";
+@import "common";
+@import "animation";
+@import "header";
+@import "footer";
+@import "pages";
+@import "loader";

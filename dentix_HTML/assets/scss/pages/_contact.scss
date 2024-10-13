@@ -1,0 +1,138 @@
+//Contact 
+.contact-appointment-form{
+    input{
+        outline: none;
+        color: var(--s2);
+        outline: none;
+        border-radius: 0;
+        border: 1px solid var(--n900);
+    }
+    ::placeholder{
+        color: var(--s2);
+    }
+}
+.contact-working-hour{
+    .mid-date{
+        width: 100px;
+    }
+}
+.trith-trophy{
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    animation: zin 2s linear infinite;
+}
+//Contact 
+
+//Contact Vresion Two
+.contact-version-2{
+    .trith-trophy{
+        position: absolute;
+        top: initial;
+        bottom: 100px;
+        left: 30%;
+    }
+    .element-plus{
+        position: absolute;
+        top: 80px;
+        left: 25%;
+        animation: rotates 10s linear infinite;
+    }
+    @include maxQuery(1199){
+        .element-plus{
+            top: 24px;
+            left: 24px;
+            width: 34px;
+        }
+        .trith-trophy{
+            bottom: 24px;
+            width: 36px;
+        }
+    }
+}
+.contact-thumbv2{
+    .contact-v2-desc{
+        max-width: 550px;
+        position: absolute;
+        bottom: -1px;
+        left: -140px;
+    }
+    @include maxQuery(1199){
+        .contact-v2-desc{
+            max-width: 320px;
+            left: -1px;
+        }
+    }
+}
+.support-items-v2{
+    .icons{
+        @include box(48);
+        display: block;
+    }
+    &:hover{
+        .n0-clr{
+            color: var(--n0);
+        }
+        .n900-clr{
+            color: var(--n900);
+        }
+    }
+}
+//Contact Vresion Two
+
+//Contact Main
+.find-item{
+    .main-info{
+        border-left: 1px solid var(--n900);
+    }
+    .email-mapbox{
+        .icons{
+            transition: all 0.5s;
+        }
+        .openmap{
+            &:hover{
+                color: var(--n0);
+                .icons{
+                    transform: rotate(60deg);
+                }
+                .openmail{
+                    color: var(--n0);
+                    .icons{
+                        transform: rotate(180deg) !important;
+                    }
+                }
+            }
+           }
+        
+    }
+    .thumb{
+        overflow: hidden;
+        img{
+            overflow: hidden;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+//Contact Main
+
+//Common Contact Us
+.common-contact{
+    .form-grp{
+        input,
+        textarea{
+            width: 100%;
+            padding: 14px 24px;
+            border: 1px solid var(--n900);
+            color: var(--s2);
+            background: var(--bg1);
+            border-radius: 0;
+        }
+        ::placeholder{
+            color: var(--s2);
+        }
+    }
+}
+//Common Contact Us

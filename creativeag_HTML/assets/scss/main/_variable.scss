@@ -1,0 +1,37 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+// default root
+:root {
+	/* Font Family */
+	--body-font: "Instrument Sans", sans-serif;
+	--sub-font:  "Instrument Sans", sans-serif;
+	/* Transition */
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: #FA3B40;
+	--p2: #B33012;
+	--p3: #00322D;
+	--p4: #502E23;
+	--p50: #e9effe;
+	--p75: #a5bcfa;
+	--p100: #7fa0f7;
+	--p200: #4878f4;
+	--p300: #235cf2;
+	--p400: #1940a9;
+	--p500: #153894;
+	--pra-clr: #605E5D;
+	--s1: #FAF3EB;
+	--active: #235CF2;
+	--ratting: #FDD401;
+	--n0: #FFFFFF;
+	--n00: #181D20;
+	--n100: #605E5D;
+	--n900: #000000;
+	--bg1: #F8F8F8;
+	--bg2: #fff;
+	--cmborder: rgba(255, 255, 255, 0.20);
+
+
+
+}

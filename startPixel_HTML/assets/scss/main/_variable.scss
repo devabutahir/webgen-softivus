@@ -1,0 +1,33 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+// default root
+:root {
+	--body-font: 'Outfit', sans-serif;
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: 0, 60, 57;
+	--p2: 255, 213, 132;
+	--p3: 255, 171, 0;
+	
+	--s1: 245, 246, 246;
+	--s2: 255, 255, 255;
+	--s3: 250, 251, 251;
+	--s4: 222, 226, 226;
+	--s5: 235, 237, 237;
+	--s6: 183, 29, 24;
+	
+	--n1: 0, 32, 30;
+	--n2: 87, 108, 107;
+
+	--gradient-p1: linear-gradient(90deg, rgba(85,54,245,1) 0%, rgba(179,252,106,1) 100%);
+	--gradient-p2: linear-gradient(90deg, rgba(146,7,255,1) 0%, rgba(255,152,152,1) 100%);
+	--gradient-p3: linear-gradient(90deg, #5034FA -1.81%, #FF825C 99.67%);
+	--box-shadow-p1: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -6px rgba(16, 24, 40, 0.08);
+}
+
+
+
+
+

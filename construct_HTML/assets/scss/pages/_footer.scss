@@ -1,0 +1,297 @@
+//Footer Section//
+.footer{
+    z-index: 1;
+    .footer-shape{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+@keyframes lf  {
+    50%{
+        transform: translateX(-10px);
+    }
+}
+.footer-widget{
+    h5{
+        display: inline-block;
+        position: relative;
+    }
+    .footer-link{
+        li{
+            a{
+                font-weight: 500;
+                position: relative;
+                transition: all 0.5s;
+                &::before{
+                    position: absolute;
+                    left: 10px;
+                    top: 2px;
+                    width: 4px;
+                    height: 1px;
+                    background: var(--p1);
+                    content: "";
+                    transition: all 0.5s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover{
+                    padding-left: 10px;
+                    color: var(--p1);
+                    &::before{
+                        left: 0;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+    .footer-mapping{
+        li{
+            a{
+                transition: all 0.4s;
+                &:hover{
+                    color: var(--p1);
+                }
+            }
+        }
+    }
+    .social-media{
+        li{
+            a{
+                @include box(36);
+                transition: all 0.4s;
+                background: rgba(255, 255, 255, 0.05);
+                i{
+                    font-size: 16px;
+                    color: var(--n0);
+                    transition: all 0.4s;
+                }
+                &:hover{
+                    background: var(--p1);
+                }
+            }
+        }
+    }
+    .contact-info-content{
+        li{
+            font-size: 20px;
+            color: var(--p1);
+            a{
+                color: var(--n0);
+                font-size: 16px;
+            }
+        }
+    }
+}
+.footer-border{
+    border-right: 1px solid var(--n200);
+    @include maxQuery(575){
+       border: unset;
+    }
+}
+.max-320{
+    max-width: 320px;
+}
+.footer-top{
+    .footer-top-inner{
+        .newsletter-footer{
+            form{
+                display: grid;
+                align-items: center;
+                gap: 20px;
+                input{
+                    background: transparent;
+                    padding: 10px 20px;
+                    height: 56px;
+                    border: unset;
+                    border: 1px solid rgba(255, 255, 255, 0.20);
+                    outline: none;
+                    border-radius: 0;
+                    color: var(--n0);
+                }
+                .submit-btn{
+                    padding: 12px 24px;
+                    background: var(--p1);
+                    color: var(--n0);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+//Footer Section//
+
+//Footer Quotes Section//
+.footer-quote{
+    position: relative;
+    &::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        content: "";
+        background: var(--n900);
+        z-index: -1;
+    }
+    .foter-quote-wrapper{
+        position: relative;
+        padding: 137px 110px 137px 0;
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 73%;
+            height: 100%;
+            content: "";
+            background: url(../../assets/images/footer/footer-quote-bg.png) no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+        h2{
+            max-width: 520px;
+        }
+    }
+    .fl-shape1{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    @include maxQuery(1700){
+        .foter-quote-wrapper{
+            padding: 100px 1px 100px 0;
+            &::before{
+                width: 100%;
+            }
+            h2{
+                max-width: 520px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .foter-quote-wrapper{
+            padding: 70px 1px 80px 0;
+        }
+    }
+}
+//Footer Quotes Section//
+
+//Order Newsletter 
+.order-newsletter{
+    z-index: 1;
+    .fresh-element{
+        position: absolute;
+        top: 30%;
+        left: 200px;
+    }
+    .slice-element{
+        position: absolute;
+        right: 100px;
+        top: 0%;
+        animation: zoomin 8s linear infinite;
+        max-width: 420px;
+    }
+    @include maxQuery(1599){
+        .fresh-element{
+            top: 30%;
+            left: 20px;
+        }
+        .slice-element{
+            right: 1px;
+            top: 0%;
+        }
+    }
+    @include maxQuery(1399){
+        .fresh-element{
+            left: 2px;
+        }
+        .slice-element{
+            right: 1px;
+            max-width: 300px;
+        }
+    }
+    @include maxQuery(1199){
+        .fresh-element{
+            top: 20%;
+            max-width: 100px;
+            z-index: -1;
+        }
+        .slice-element{
+            top: 5%;
+            max-width: 200px;
+            z-index: -1;
+        }
+    }
+    @include maxQuery(767){
+        .fresh-element{
+            top: 1%;
+            max-width: 70px;
+        }
+        .slice-element{
+           display: none;
+        }
+    }
+}
+@keyframes zoomin {
+    50%{
+        transform: scale(1.1);
+    }
+}
+.order-newsletter-content{
+    .cmn-sub{
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--p1);
+        font-family: var(--sub-font);
+    }
+    .newsletter-form{
+        max-width: 574px;
+        margin: 0 auto;
+        border-radius: 8px;
+        button,
+        input{
+            background: transparent;
+            height: 55px;
+            border-radius: 0;
+            outline: none;
+            color: var(--n100);
+            font-size: 14px;
+        }
+        input{
+            padding: 18px 14px;
+        }
+        ::placeholder{
+            color: var(--n100);
+        }
+        button{
+            background: var(--p1);
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--n900);
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 8px;
+            i{
+                color: var(--n900);
+            }
+        }
+        @include maxQuery(575){
+            button,
+            input{
+                height: 40px;
+                height: 40px;
+                padding: 5px 16px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+//Order Newsletter 

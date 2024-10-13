@@ -1,0 +1,49 @@
+.footer-section{
+    .element-area{
+        img{
+            transform: rotate(75deg);
+        }
+    }
+    .footer-links{
+        ul{
+            overflow: hidden;
+        }
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            &::before {
+                content: "\ea65";
+                font-family: "tabler-icons";
+                z-index: 1;
+                position: absolute;
+                color: rgba(var(--p2), 1);
+                left: -30px;
+                font-size: 24px;
+                transition: var(--transition);
+            }
+            &:hover{
+                padding-left: 20px;
+                color: rgba(var(--p2), 1);
+                &::before {
+                    left: -5px;
+                }
+            }
+        }
+    }
+    .copyright {
+        a{
+            color: rgba(var(--s1), 1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

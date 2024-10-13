@@ -1,0 +1,399 @@
+// banner-section
+.banner-section{
+    &.index-one{
+        .satisfied-customers li {
+            margin: 0 -8px;
+        }
+        .total-balance{
+            background-image: url(../images/banner-shape.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 100% 60%;
+            box-shadow: var(--box-shadow-p1);
+            margin-right: -80px;
+            @include maxQuery(1399){
+                margin-right: -40px;
+            }
+            @include maxQuery(575){
+                margin-right: 0;
+                top: 15% !important;
+            }
+        }
+        .abs-area{
+            .element-1{
+                left: -15%;
+                top: -10%;
+                animation: rotate 11s linear infinite;
+            }
+            .element-2{
+                left: -15%;
+                bottom: -10%;
+                animation: rotate 11s linear infinite;
+            }
+            .element-3{
+                left: 80%;
+                bottom: -20%;
+            }
+            .element-4{
+                right: -10%;
+                top: 20%;
+            }
+            .element-5{
+                right: 8%;
+                bottom: 10%;
+            }
+            .element-6{
+                right: 8%;
+                top: -50%;
+            }
+        }
+    }
+    &.about-us{
+        .element-1{
+            top: -8%;
+        }
+        .element-2{
+            animation: rotate 11s linear infinite;
+        }
+    }
+}
+
+// services-section
+.services-section{
+    .single-box{
+        .icon-area{
+            @include box(70);
+            @include maxQuery(991){
+                @include box(50);
+            }
+        }
+        &:hover{
+            background-color: rgba(var(--p1), 1);
+            .icon-area{
+                background-color: rgba(var(--s1), 1);
+            }
+            i{
+                color: rgba(var(--p1), 1);
+            }
+            h5, p, a i, a span{
+                color: rgba(var(--s2), 1);
+            }
+        }
+    }
+    &.core-value{
+        .single-box{
+            &:hover{
+                .icon-area{
+                    background-color: rgba(var(--p2), 1);
+                }
+            }
+        }
+    }
+}
+
+// effortless-excellence
+.effortless-excellence{
+    .single-box{
+        span{
+            @include box(70);
+            @include maxQuery(991){
+                @include box(50);
+            }
+        }
+    }
+}
+
+// How Works
+.how-works{
+    .abs-area{
+        img{
+            width: 70% !important;
+        }
+    }
+    .single-box{
+        .icon-area{
+            @include box(70);
+            @include maxQuery(991){
+                @include box(50);
+            }
+            > img{
+                width: 28px;
+            }
+        }
+        .abs-item{
+            &.start{
+                top: 30px;
+                right: calc(70px - 50%);
+            }
+            &.end{
+                left: calc(70px - 50%);
+            }
+        }
+    }
+}
+
+// connect-software
+.connect-software {
+    .single-area{
+        @include box(100);
+        @include maxQuery(1199){
+            @include box(80);
+        }
+        @include maxQuery(991){
+            @include box(60);
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
+
+// FAQ Starts
+.faq-section {
+    .header-area {
+        cursor: pointer;
+        button {
+            font-size: inherit;
+            @include maxQuery(1199) {
+                padding-right: 15%;
+            }
+            &::after {
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                border-radius: 50%;
+            }
+            &::after {
+                content: "\f531";
+                font-family: "Phosphor";
+                font-size: 18px;
+                transform: rotate(0deg);
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .content-area {
+        display: none;
+    }
+    .active button {
+        &::after {
+            content: "\f4bf";
+            transform: rotate(180deg);
+            transition: var(--transition);
+            color: rgba(var(--n2), 1);
+        }
+    }
+    .accordion-single{
+        &.active{
+            background-color: rgba(var(--p1), 1);
+            button, p{
+                color: rgba(var(--s2), 1);
+                &::after {
+                    color: rgba(var(--s2), 1);
+                }
+            }
+        }
+    }
+}
+
+// pricing-plan
+.pricing-plan{
+    .tabLinks .nav-links{
+        color: rgba(var(--n1), 0.3);
+        &.active{
+            color: rgba(var(--n1), 1);
+        }
+    }
+    .single-item{
+        &.alt-color{
+            i{
+                color: rgba(var(--p1), 1);
+            }
+            .box-style{
+                background-color: rgba(var(--p3), 1);
+            }
+            .abs-area{
+                span{
+                    color: rgba(var(--n1), 1);
+                }
+            }
+        }
+    }
+    .icon-area{
+        @include box(24);
+        @include maxQuery(1199){
+            @include box(18);
+        }
+    }
+}
+
+// testimonial
+.testimonial{
+    .items-wrapper{
+        &:hover{
+            background-color: rgba(var(--p1), 1);
+            h6, span, p{
+                color: rgba(var(--s2), 1);
+            }
+            i{
+                color: rgba(var(--p2), 1);
+            }
+        }
+    }
+}
+
+// Blog & Articles
+.blog-articles{
+    .single-box{
+        &:hover{
+            .abs-area{
+                background-color: rgba(var(--p2), 1);
+            }
+        }
+    }
+}
+
+// sidebar-area
+.sidebar-area{
+    .icon-area{
+        @include box(90);
+        @include maxQuery(1199){
+            @include box(80);
+        }
+        i{
+            color: rgba(var(--n1), 1);
+        }
+    }
+    li{
+        a{
+            &:hover{
+                background-color: rgba(var(--p1), 1);
+                span, i{
+                    color: rgba(var(--s2), 1);
+                }
+            }
+        }
+    }
+}
+
+// contact-details
+.contact-details{
+    .icon-area{
+        @include box(80);
+        @include maxQuery(1199){
+            @include box(60);
+        }
+    }
+    .social-item li a{
+        @include box(40);
+        @include maxQuery(1199){
+            @include box(30);
+        }
+        &:hover{
+            background-color: rgba(var(--p1), 1);
+            i{
+                color: rgba(var(--s3), 1);
+            }
+        }
+    }
+}
+
+// Authenticate
+.authenticate{
+    .image-area{
+        img{
+            @include maxQuery(1399){
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+}
+
+// Privacy & Terms
+.privacy-content {
+    .top-wrapper {
+        margin-top: -7px;
+        margin-bottom: -7px;
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        ul {
+            margin-bottom: 20px;
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .safe-data {
+        margin: 55px 0;
+        ul {
+            list-style-type: decimal;
+            margin-left: 18px;
+            li {
+                padding-left: 15px;
+                &::marker {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .cookies {
+        margin-bottom: -36px;
+    }
+    &.terms {
+        .safe-data {
+            margin-bottom: -23px;
+        }
+    }
+}
+
+// pre-built-sites
+.pre-built-sites{
+    z-index: 9999;
+    .sites-show-button{
+        background-color: #292C36;
+        img{
+            background: #48A133 !important;
+        }
+    }
+    .buynow-button{
+        background: #C72424 !important;
+    }
+    .button-area{
+        top: calc(50% - 100px);
+        button{
+            writing-mode: vertical-rl;
+        }
+    }
+    .close-button-area{
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        &.active{
+            pointer-events: visible;
+            opacity: 1;
+        }
+        button{
+            @include box(40);
+            background-color: #c72424;
+        }
+    }
+    .demo-frame{
+        transform: translate(70%, -5%) perspective(50px) rotateY(-25deg);
+        transition: all ease-in-out 2s;
+        position: fixed;
+        &.active{
+            transform: translate(0%, 0%);
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

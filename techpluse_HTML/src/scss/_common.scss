@@ -1,0 +1,930 @@
+// display
+.d-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// text color
+
+.text-primary-10 {
+    color: $primary-10;
+}
+
+
+.text-primary-50 {
+    color: $primary-50;
+}
+
+
+.text-primary-75 {
+    color: $primary-75;
+}
+
+
+.text-primary-100 {
+    color: $primary-100;
+}
+
+
+.text-primary-200 {
+    color: $primary-200;
+}
+
+
+.text-primary-300 {
+    color: $primary-300;
+}
+
+
+.text-primary-400 {
+    color: $primary-400;
+}
+
+
+.text-primary-500 {
+    color: $primary-500;
+}
+
+
+.text-secondary-50 {
+    color: $secondary-50;
+}
+
+
+.text-n0 {
+    color: $n0;
+}
+
+
+.text-n10 {
+    color: $n10;
+}
+
+
+.text-n20 {
+    color: $n20;
+}
+
+
+.text-n30 {
+    color: $n30;
+}
+
+
+.text-n40 {
+    color: $n40;
+}
+
+
+.text-n50 {
+    color: $n50;
+}
+
+
+.text-n60 {
+    color: $n60;
+}
+
+
+.text-n70 {
+    color: $n70;
+}
+
+
+.text-n80 {
+    color: $n80;
+}
+
+
+.text-n90 {
+    color: $n90;
+}
+
+
+.text-n100 {
+    color: $n100;
+}
+
+
+.text-n200 {
+    color: $n200;
+}
+
+
+.text-n300 {
+    color: $n300;
+}
+
+
+.text-n400 {
+    color: $n400;
+}
+
+
+.text-n500 {
+    color: $n500;
+}
+
+
+.text-n600 {
+    color: $n600;
+}
+
+
+.text-n700 {
+    color: $n700;
+}
+
+
+.text-n800 {
+    color: $n800;
+}
+
+
+.text-n900 {
+    color: $n900;
+}
+
+
+.text-n1000 {
+    color: $n1000;
+}
+
+// background color
+.bg-primary-10 {
+    background: $primary-10;
+}
+
+.bg-primary-50 {
+    background: $primary-50;
+}
+
+.bg-primary-75 {
+    background: $primary-75;
+}
+
+.bg-primary-100 {
+    background: $primary-100;
+}
+
+.bg-primary-200 {
+    background: $primary-200;
+}
+
+.bg-primary-300 {
+    background: $primary-300;
+}
+
+.bg-primary-400 {
+    background: $primary-400;
+}
+
+.bg-primary-500 {
+    background: $primary-500;
+}
+
+
+.bg-secondary-50 {
+    background: $secondary-50;
+}
+
+.bg-n0 {
+    background: $n0;
+}
+
+.bg-n10 {
+    background: $n10;
+}
+
+.bg-n20 {
+    background: $n20;
+}
+
+.bg-n30 {
+    background: $n30;
+}
+
+.bg-n40 {
+    background: $n40;
+}
+
+.bg-n50 {
+    background: $n50;
+}
+
+.bg-n60 {
+    background: $n60;
+}
+
+.bg-n70 {
+    background: $n70;
+}
+
+.bg-n80 {
+    background: $n80;
+}
+
+.bg-n90 {
+    background: $n90;
+}
+
+.bg-n100 {
+    background: $n100;
+}
+
+.bg-n200 {
+    background: $n200;
+}
+
+.bg-n300 {
+    background: $n300;
+}
+
+.bg-n400 {
+    background: $n400;
+}
+
+.bg-n500 {
+    background: $n500;
+}
+
+.bg-n600 {
+    background: $n600;
+}
+
+.bg-n700 {
+    background: $n700;
+}
+
+.bg-n800 {
+    background: $n800;
+}
+
+.bg-n900 {
+    background: $n900;
+}
+
+.bg-n1000 {
+    background: $n1000;
+}
+
+
+
+// width
+.w-max-content {
+    max-width: max-content;
+}
+
+.w-min-content {
+    width: min-content;
+}
+
+.w-1 {
+    width: 1px;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@include screen(sm) {
+    .w-sm-10 {
+        width: 10%;
+    }
+
+    .w-sm-20 {
+        width: 20%;
+    }
+
+    .w-sm-30 {
+        width: 30%;
+    }
+
+    .w-sm-40 {
+        width: 40%;
+    }
+
+    .w-sm-50 {
+        width: 50%;
+    }
+
+    .w-sm-60 {
+        width: 60%;
+    }
+
+    .w-sm-70 {
+        width: 70%;
+    }
+
+    .w-sm-80 {
+        width: 80%;
+    }
+
+    .w-sm-90 {
+        width: 90%;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+
+@include screen(md) {
+    .w-md-10 {
+        width: 10%;
+    }
+
+    .w-md-20 {
+        width: 20%;
+    }
+
+    .w-md-30 {
+        width: 30%;
+    }
+
+    .w-md-40 {
+        width: 40%;
+    }
+
+    .w-md-50 {
+        width: 50%;
+    }
+
+    .w-md-60 {
+        width: 60%;
+    }
+
+    .w-md-70 {
+        width: 70%;
+    }
+
+    .w-md-80 {
+        width: 80%;
+    }
+
+    .w-md-90 {
+        width: 90%;
+    }
+
+    .w-md-100 {
+        width: 100%;
+    }
+}
+
+@include screen(lg) {
+    .w-lg-10 {
+        width: 10%;
+    }
+
+    .w-lg-20 {
+        width: 20%;
+    }
+
+    .w-lg-30 {
+        width: 30%;
+    }
+
+    .w-lg-40 {
+        width: 40%;
+    }
+
+    .w-lg-50 {
+        width: 50%;
+    }
+
+    .w-lg-60 {
+        width: 60%;
+    }
+
+    .w-lg-70 {
+        width: 70%;
+    }
+
+    .w-lg-80 {
+        width: 80%;
+    }
+
+    .w-lg-90 {
+        width: 90%;
+    }
+
+    .w-lg-100 {
+        width: 100%;
+    }
+}
+
+@include screen(xl) {
+    .w-xl-10 {
+        width: 10%;
+    }
+
+    .w-xl-20 {
+        width: 20%;
+    }
+
+    .w-xl-30 {
+        width: 30%;
+    }
+
+    .w-xl-40 {
+        width: 40%;
+    }
+
+    .w-xl-50 {
+        width: 50%;
+    }
+
+    .w-xl-60 {
+        width: 60%;
+    }
+
+    .w-xl-70 {
+        width: 70%;
+    }
+
+    .w-xl-80 {
+        width: 80%;
+    }
+
+    .w-xl-90 {
+        width: 90%;
+    }
+
+    .w-xl-100 {
+        width: 100%;
+    }
+}
+
+@include screen(xxl) {
+    .w-xxl-10 {
+        width: 10%;
+    }
+
+    .w-xxl-20 {
+        width: 20%;
+    }
+
+    .w-xxl-30 {
+        width: 30%;
+    }
+
+    .w-xxl-40 {
+        width: 40%;
+    }
+
+    .w-xxl-50 {
+        width: 50%;
+    }
+
+    .w-xxl-60 {
+        width: 60%;
+    }
+
+    .w-xxl-70 {
+        width: 70%;
+    }
+
+    .w-xxl-80 {
+        width: 80%;
+    }
+
+    .w-xxl-90 {
+        width: 90%;
+    }
+
+    .w-xxl-100 {
+        width: 100%;
+    }
+}
+
+@include screen(3xl) {
+    .w-3xl-10 {
+        width: 10%;
+    }
+
+    .w-3xl-20 {
+        width: 20%;
+    }
+
+    .w-3xl-30 {
+        width: 30%;
+    }
+
+    .w-3xl-40 {
+        width: 40%;
+    }
+
+    .w-3xl-50 {
+        width: 50%;
+    }
+
+    .w-3xl-60 {
+        width: 60%;
+    }
+
+    .w-3xl-70 {
+        width: 70%;
+    }
+
+    .w-3xl-80 {
+        width: 80%;
+    }
+
+    .w-3xl-90 {
+        width: 90%;
+    }
+
+    .w-3xl-100 {
+        width: 100%;
+    }
+}
+
+@include screen(4xl) {
+    .w-4xl-10 {
+        width: 10%;
+    }
+
+    .w-4xl-20 {
+        width: 20%;
+    }
+
+    .w-4xl-30 {
+        width: 30%;
+    }
+
+    .w-4xl-40 {
+        width: 40%;
+    }
+
+    .w-4xl-50 {
+        width: 50%;
+    }
+
+    .w-4xl-60 {
+        width: 60%;
+    }
+
+    .w-4xl-70 {
+        width: 70%;
+    }
+
+    .w-4xl-80 {
+        width: 80%;
+    }
+
+    .w-4xl-90 {
+        width: 90%;
+    }
+
+    .w-4xl-100 {
+        width: 100%;
+    }
+}
+
+// height
+.h-unset {
+    height: unset !important;
+}
+
+.h-1 {
+    height: 1px;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+// line height
+.lh-0 {
+    line-height: 0;
+}
+
+// cursor style
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.cursor-auto {
+    cursor: auto;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+// writing mode
+.writing-hrl {
+    writing-mode: horizontal-tb;
+}
+
+.writing-vrl {
+    writing-mode: vertical-rl;
+}
+
+.writing-vlr {
+    writing-mode: vertical-lr;
+}
+
+.blend-different {
+    mix-blend-mode: difference;
+}
+
+// rotate style
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-n90 {
+    transform: rotate(-90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+
+
+// border style
+.border {
+    border: 1px solid transparent !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid transparent !important;
+}
+
+.primary500-border {
+    border-color: $primary-500 !important;
+}
+
+.n0-border {
+    border-color: $n0 !important;
+}
+
+.n80-border {
+    border-color: $n80 !important;
+}
+
+.n900-border {
+    border-color: $n900 !important;
+}
+
+.n1000-border {
+    border-color: $n1000 !important;
+}
+
+// transition
+.transition {
+    transition: $transition;
+}
+
+
+// margin 
+.section-left-margin {
+    @include screen(lg) {
+        margin-left: 160px;
+        width: calc(100% - 160px);
+    }
+
+    @include screen(xl) {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    @include screen(4xl) {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+    }
+}
+
+.hr-line {
+    width: 100%;
+    height: 1px;
+}
+
+
+// placeholder color
+.placeholder-n0 {
+    &::placeholder {
+        color: $n0;
+    }
+}
+
+// hover bg transform
+.hover-bg-transform {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: right;
+        transform: scaleX(0);
+        background: $primary-300;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+// list style
+.list-disc {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.list-w-50 {
+    li {
+        width: 100%;
+
+        @include screen(sm) {
+            width: calc(100% / 2 - 12px);
+        }
+    }
+}
+
+.back-to-top {
+    border-radius: 6px;
+    background: $secondary-50;
+    cursor: pointer;
+    transition: $transition;
+    width: 30px;
+    height: 30px;
+    transform: translateY(200px);
+    z-index: 100;
+
+    &.show {
+        transform: translateY(-10px);
+    }
+
+    @include screen(md) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include screen(lg) {
+        width: 60px;
+        height: 60px;
+    }
+
+    &:hover {
+        background: $primary-300;
+    }
+}
+
+.swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
+
+.swiper-btns {
+
+    .btn-prev,
+    .btn-next {
+        @include box(36);
+        background: $n10;
+        cursor: pointer;
+        color: $n900;
+        transition: $transition;
+        border-radius: unset;
+        border: 1px solid $n900;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        @include screen(sm) {
+            @include box(40);
+            border-radius: unset;
+        }
+
+        @include screen(lg) {
+            @include box(60);
+            border-radius: unset;
+        }
+
+        &::before {
+            width: 0;
+            height: 0;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $primary-300;
+            transition: $transition;
+            z-index: -1;
+        }
+
+        &:hover {
+
+            &::before {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// image reveal
+.reveal-left,
+.reveal-bottom {
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.reveal-panel {
+    position: absolute;
+    will-change: transform;
+    width: 100%;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+// progress bar
+.progress_bar {
+    width: 100%;
+    height: 8px;
+    position: relative;
+    background: $primary-75;
+    border-radius: 6px;
+
+    .progress-bar-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $secondary-50;
+        height: 100%;
+        width: 0;
+        transition: width 1s cubic-bezier(0, 0.79, 0.54, 0.65);
+        border-radius: inherit;
+    }
+}

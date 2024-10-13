@@ -1,0 +1,460 @@
+// display
+.d-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// text color
+.text-primary {
+    color: $primary !important;
+}
+
+.text-primary2 {
+    color: $primary2 !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.text-secondary2 {
+    color: $secondary2 !important;
+}
+
+.text-n0 {
+    color: $n0 !important;
+}
+
+.text-n10 {
+    color: $n10;
+}
+
+.text-n20 {
+    color: $n20;
+}
+
+.text-n30 {
+    color: $n30;
+}
+
+.text-n40 {
+    color: $n40;
+}
+
+.text-n50 {
+    color: $n50;
+}
+
+// background color
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-primary2 {
+    background-color: $primary2 !important;
+}
+
+.bg-secondary {
+    background-color: $secondary !important;
+}
+
+.bg-secondary2 {
+    background-color: $secondary2 !important;
+}
+
+.bg-n0 {
+    background-color: $n0;
+}
+
+.bg-n10 {
+    background-color: $n10;
+}
+
+.bg-n20 {
+    background-color: $n20;
+}
+
+.bg-n30 {
+    background-color: $n30;
+}
+
+.bg-n40 {
+    background-color: $n40;
+}
+
+.bg-n50 {
+    background-color: $n50;
+}
+
+.bg-n50_05 {
+    background-color: rgba($n50, 0.05) !important;
+}
+
+// width
+.w-max-content {
+    max-width: max-content;
+}
+
+.w-min-content {
+    width: min-content;
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+// border style
+.border {
+    border: 1px solid transparent !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid transparent !important;
+}
+
+.n0-border {
+    border-color: $n0 !important;
+}
+
+.n0-border_15 {
+    border-color: rgba($n0, 0.15) !important;
+}
+
+.n50-border {
+    border-color: $n50 !important;
+}
+
+.n50-border_20 {
+    border-color: rgba($n50, 0.20) !important;
+}
+
+.n50-border_05 {
+    border-color: rgba($n50, 0.05) !important;
+}
+
+.radius-xxl {
+    border-radius: 32px;
+}
+
+.radius-xl {
+    border-radius: 24px;
+}
+
+.radius-lg {
+    border-radius: 16px;
+}
+
+.radius-base {
+    border-radius: 12px;
+}
+
+.radius-sm {
+    border-radius: 8px;
+}
+
+.radius-xs {
+    border-radius: 4px;
+}
+
+// transition
+.transition {
+    transition: $transition;
+}
+
+// shadow
+.shadow-2 {
+    box-shadow: $shadow-2;
+}
+
+// select
+.select-option-area {
+    padding: 12px 24px;
+    background: $secondary;
+    border-radius: 12px;
+
+    .select2 {
+        .selection {
+            .select2-selection--single {
+                background: unset;
+                border: unset;
+                border-radius: unset;
+
+                .select2-selection__arrow {
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+
+                    b {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: "\e136";
+                        font-family: "Phosphor-Fill";
+                        font-weight: 600;
+                        font-size: 12px;
+                        position: absolute;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+
+        &.select2-container--open {
+            .select2-selection--single {
+                .select2-selection__arrow {
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &.select-option-2 {
+        background: transparent;
+        padding: 0;
+
+        .select2 {
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+    }
+}
+
+.select2-container {
+    .select2-search--dropdown {
+        display: none;
+    }
+
+    .select2-results {
+        background: $primary;
+
+        .select2-results__options {
+            .select2-results__option {
+                display: block;
+                color: $n0;
+
+                &:hover,
+                &:focus,
+                &:active,
+                &:focus-within {
+                    background: $primary2;
+                }
+            }
+
+            .select2-results__option--selected {
+                background: $secondary !important;
+            }
+
+            .select2-results__option--highlighted {
+                background: unset;
+            }
+        }
+    }
+}
+
+// progress bar
+.progress_bar {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    transition: $transition;
+    background: rgba($n50, 0.05);
+    border-radius: 6px;
+
+    .progress-bar-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $secondary2;
+        height: 100%;
+        width: 0;
+        transition: width 1s cubic-bezier(0, 0.79, 0.54, 0.65);
+        border-radius: inherit;
+
+        &::after {
+            content: attr(data-value);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 100%;
+            color: #fff;
+            background-color: $secondary2;
+            @include box(30);
+        }
+    }
+}
+
+.progress_bar-2 {
+    @extend .progress_bar;
+    background: $primary2;
+
+    .progress-bar-inner {
+        background: $secondary;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.progress_bar-3 {
+    @extend .progress_bar;
+    height: 10px;
+
+    .progress-bar-inner {
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.list-disc {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.back-to-top {
+    border-radius: 6px;
+    background: $secondary;
+    cursor: pointer;
+    transition: $transition;
+    width: 30px;
+    height: 30px;
+    transform: translateY(200px);
+    z-index: 100;
+
+    &.show {
+        transform: translateY(-10px);
+    }
+
+    @include screen(md) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include screen(lg) {
+        width: 60px;
+        height: 60px;
+    }
+
+    &:hover {
+        background: $primary2;
+    }
+}
+
+.timeline {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 1px;
+        background: rgba($n0, 0.2);
+        z-index: -1;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: $secondary;
+        z-index: -1;
+    }
+
+    .timeline-item {
+        position: relative;
+        padding-left: 15%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 0;
+            height: 1px;
+            width: 12%;
+            background: rgba($n0, 0.2);
+            z-index: -1;
+            display: inline-block;
+        }
+
+    }
+}
+
+// quantity input button
+.quantity {
+    .quantityValue {
+        width: 40px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.wishlist-btn-2 {
+    @include box(44);
+    background: $n10;
+    cursor: pointer;
+    color: $n50;
+    transition: $transition;
+
+    &:hover {
+        color: $secondary;
+    }
+
+    @include screen(lg) {
+        @include box(52);
+    }
+}
+
+// tab 
+.tab-btn-area {
+    .tab-btn {
+        cursor: pointer;
+        transition: $transition;
+
+        &.active {
+            border-bottom: 2px solid $secondary2;
+        }
+    }
+}
+
+.tab-content {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(10px);
+    height: 0;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    height: auto;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

@@ -1,0 +1,53 @@
+/*============================================ 
+# Template Name: Pizzalio
+# Version: 1.0
+# Date: 
+# Author: 
+# Description: Pizzalio - Pizza Resturent HTML Template
+============================================*/
+
+/*============================================ 
+======== Table of Css Content =========
+# Typography
+# Normalize 
+# Global style
+# Header Area
+# Banner Area
+# Section Area
+# Footer Area
+============================================*/
+
+// Scss main
+
+//--Main Variable--//
+@import "main/_variable";
+//--Main mixins--//
+@import "main/_mixins";
+//--Main typography--//
+@import "main/_typography";
+//--Main global--//
+@import "main/_global";
+
+// Scss Pages
+
+//--Pages Navbar--//
+@import "pages/_header";
+//--Pages Footer--//
+@import "pages/_footer";
+//--Pages Section--//
+@import "pages/_section";
+//--Pages banner--//
+@import "pages/_banner";
+//--Pages blog--//
+@import "pages/_blog";
+//--Pages contact--//
+@import "pages/_contact";
+//--Pages team--//
+@import "pages/_team";
+//--Pages testimonial--//
+@import "pages/_testimonial";
+//--Pages service--//
+@import "pages/_service";
+//--Pages Price--//
+@import "pages/_price";
+@import "pages/_progress";

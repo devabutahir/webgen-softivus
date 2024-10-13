@@ -1,0 +1,413 @@
+// button
+.small-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary2;
+    color: $primary;
+    padding: 12px 24px;
+    border-radius: 50rem;
+    transition: $transition;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 600;
+    box-sizing: border-box;
+
+    &.alt-color {
+        background: $primary;
+        color: $primary2;
+    }
+
+    &.outline-btn {
+        background: transparent;
+        color: $primary2;
+        border: 1px solid $primary2;
+
+        &.alt-outline-btn {
+            color: $n0;
+            border: 1px solid $n0;
+        }
+    }
+
+    &.outline-btn-2 {
+        background: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+    &.alt-hover-color {
+        border: 1px solid transparent;
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $primary2;
+
+        &.alt-color {
+            background: $primary4;
+            color: $n0;
+        }
+
+        &.outline-btn {
+            background: $primary2;
+            color: $primary;
+
+            &.alt-outline-btn {
+                border: 1px solid $primary2;
+            }
+        }
+
+        &.outline-btn-2 {
+            background: $primary;
+            color: $primary2;
+        }
+
+        &.alt-hover-color {
+            color: $n0;
+            border: 1px solid $n0;
+        }
+    }
+}
+
+.round-btn {
+    @include box(60);
+    border: 1px solid $primary;
+    color: $primary;
+    transform: rotate(-45deg);
+    transition: $transition;
+    overflow: hidden;
+    z-index: 1;
+
+    &:hover {
+        background-color: $primary;
+        color: $primary2;
+        transform: rotate(0deg);
+    }
+}
+
+.round-btn2 {
+    @include box(80);
+    border: 1px solid rgba($primary2, 0.40);
+    transition: $transition;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include screen(sm) {
+        @include box(130);
+    }
+
+    @include screen(lg) {
+        @include box(160);
+    }
+
+    @include screen(3xl) {
+        @include box(200);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: right;
+        transform: scaleX(0);
+        background: $primary2;
+        border-radius: inherit;
+    }
+
+    .btn-text,
+    .btn-icon {
+        transition: $transition;
+        color: $primary2;
+    }
+
+    .btn-icon {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        &::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .btn-text,
+        .btn-icon {
+            color: $primary;
+        }
+
+        .btn-icon {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.link-btn {
+    transition: $transition;
+
+    &:hover {
+        color: $primary2;
+    }
+}
+
+.link-btn-2 {
+    transition: $transition;
+    color: $primary2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .btn-icon {
+        @include box(36);
+        transition: $transition;
+        border: 1px solid rgba($n0, 0.25);
+
+        i {
+            transition: $transition;
+            color: inherit;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &:hover {
+        .btn-icon {
+            background: $primary2;
+            border-color: $primary2;
+            color: $primary;
+
+            i {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.breadcrumb-area {
+    background: linear-gradient(270deg, rgba(197, 255, 74, 0.07) 0%, rgba(197, 255, 74, 0.00) 100%);
+    margin-top: 100px;
+
+    .breadcrumb {
+        .breadcrumb-item {
+            a {
+                color: $n0;
+                transition: $transition;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $primary2;
+                }
+            }
+
+            &.active {
+                color: $primary2;
+                text-transform: uppercase;
+            }
+
+            &:before {
+                color: $primary2;
+            }
+        }
+    }
+}
+
+// input 
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50rem;
+    border: 1px solid rgba($n0, 0.25);
+    background: $primary4;
+
+    &.bg-none {
+        background: transparent;
+    }
+
+    input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $n0;
+        font-size: 16px;
+        padding-left: 32px;
+
+        &::placeholder {
+            color: $n0;
+        }
+    }
+
+    button {
+        @include box(56);
+        background: $primary2;
+        color: $primary;
+        transition: $transition;
+
+        &:hover {
+            background: $primary;
+            color: $primary2;
+        }
+    }
+
+    &.alt-color {
+        border-color: $primary;
+
+        input {
+            color: $primary;
+
+            &::placeholder {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.input-area {
+    padding: 16px 32px;
+    border: 1px solid rgba($n0, 0.25);
+    background: $primary4;
+    width: 100%;
+    border-radius: 12px;
+    color: $n0;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: $n0;
+    }
+}
+
+.placeholder-primary {
+    &::placeholder {
+        color: $primary;
+        font-weight: 600;
+    }
+}
+
+input[type='range'] {
+    width: 100%;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 5px;
+    -webkit-appearance: none;
+    background: $secondary;
+    margin-top: -1px;
+    border: none;
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $n0;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: $secondary;
+    margin-top: -10px;
+}
+
+// accordion area
+.accordion-area {
+    .accordion-item {
+        .accordion-header {
+            display: block;
+            cursor: pointer;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba($n0, 0.25);
+            transition: $transition;
+
+            .accordion-icon {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                z-index: 1;
+
+                &::before {
+                    content: '\eb0b';
+                    font-family: 'tabler-icons';
+                    font-weight: 500;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    color: $n0;
+                    z-index: -1;
+                    transition: $transition;
+                }
+            }
+        }
+
+        .accordion-content {
+            max-height: 0;
+            padding: 0 24px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+
+        &.show {
+            background: $primary2;
+            border-radius: 12px;
+
+            .accordion-header {
+                border: unset;
+                color: $primary;
+
+                .accordion-icon {
+                    &::before {
+                        content: '\eaf2';
+                        color: $primary;
+                    }
+                }
+            }
+
+            .accordion-content {
+                padding: 24px;
+                padding-top: 0;
+                max-height: initial;
+                color: $primary;
+            }
+        }
+    }
+}
+
+// input type checkbox
+.input-checkbox {
+    .checkbox {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba($n0, 0.25);
+        border-radius: 4px;
+    }
+
+    input:checked+.checkbox {
+        background: $primary4;
+
+        &:before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 4px;
+            height: 10px;
+            border: solid #FFF;
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+        }
+    }
+}

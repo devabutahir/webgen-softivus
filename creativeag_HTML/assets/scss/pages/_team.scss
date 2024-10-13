@@ -1,0 +1,86 @@
+// -Team- //
+.team-item{
+    z-index: 1;
+    &::before{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(148, 35, 38, 0.00) 0%, #FA3B40 100%);
+        transition: all 0.4s;
+    }
+    .content-info{
+        position: absolute;
+        z-index: 1;
+        padding: 40px 40px;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+    @include maxQuery(1399){
+        .content-info{
+            position: absolute;
+            z-index: 1;
+            padding: 20px 20px;
+            left: 0;
+            bottom: 0;
+        } 
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+        }
+        .content-info{
+            opacity: 1;
+            visibility: visible;
+            h5{
+                a{
+                    color: var(--n0);
+                }
+            }
+        }
+    }
+}
+.team-get{
+    textarea,
+    input{
+        border: unset;
+        background: var(--bg1);
+        color: var(--n900);
+    }
+    ::placeholder{
+        color: var(--n900);
+        font-size: 14px;
+    }
+}
+.team-details-thumb{
+    .team-social{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 350px;
+        padding: 20px 16px;
+        background: var(--n0);
+        margin: 0 auto;
+    }
+    @include maxQuery(1399){
+        .team-social{
+            width: 310px;
+            padding: 14px 16px;
+        }
+    }
+}
+.call-info{
+    a{
+        transition: all 0.4s;
+        &:hover{
+            color: var(--p1);
+        }
+    }
+}
+// -Team- // 

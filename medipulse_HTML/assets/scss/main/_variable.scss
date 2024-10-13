@@ -1,0 +1,38 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+// default root
+:root {
+	/* Font Family */
+	--body-font: "Sora", sans-serif;
+	--sub-font:  "Sora", sans-serif;
+	/* Transition */
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: #EB753B;
+	--p2: #005EF3;
+	--p3: #000F2D;
+	--p4: #502E23;
+	--p50: #e9effe;
+	--p75: #a5bcfa;
+	--p100: #7fa0f7;
+	--p200: #4878f4;
+	--p300: #235cf2;
+	--p400: #1940a9;
+	--p500: #153894;
+	--pra-clr: #605E5D;
+	--s1: #FAF3EB;
+	--active: #235CF2;
+	--ratting: #FDD401;
+	--n0: #FFFFFF;
+	--n50: #666666;
+	--n00: #181D20;
+	--n100: #605E5D;
+	--n900: #000000;
+	--bg1: #F2FBFE;
+	--bg2: #fff;
+	--cmborder: rgba(255, 255, 255, 0.20);
+
+
+
+}

@@ -1,0 +1,25 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// default root
+:root {
+	--body-font: 'Inter', sans-serif;
+	--head-font: 'Work Sans', sans-serif;
+	
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: 71, 90, 58;
+	
+	--s1: 235, 180, 0;
+
+	--n1: 0, 0, 0;
+	--n2: 228, 237, 227;
+	--n3: 97, 97, 97;
+	--n4: 255, 255, 255;
+	--n5: 208, 214, 199;
+	--n6: 245, 247, 242;
+
+	--gradient-p1: linear-gradient(90deg, rgba(12, 169, 64, 0.08) 0.68%, rgba(236, 88, 88, 0.08) 100%);
+	--box-shadow-p1: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
+}

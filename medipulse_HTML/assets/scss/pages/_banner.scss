@@ -1,0 +1,30 @@
+
+
+//banner-section
+
+//banner-section
+
+//Breadcrumnd 
+.breadcrumnd-hero{
+    z-index: 1;
+    .breadcrumnd-content{
+        padding: 100px 0 110px;
+    }
+    .breadcrumnd-list{
+        li,a{
+            color: var(--n900);
+            text-transform: uppercase;
+        }
+    }
+    @include maxQuery(1199){
+        .breadcrumnd-content{
+            padding: 80px 0 95px;
+        }
+    }
+    @include maxQuery(575){
+        .breadcrumnd-content{
+            padding: 40px 0 65px;
+        }
+    }
+}
+//Breadcrumnd 

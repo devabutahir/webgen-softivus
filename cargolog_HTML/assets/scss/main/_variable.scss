@@ -1,0 +1,51 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// default root
+:root {
+	/* Font Family */
+	--body-font: 'Prompt', sans-serif;
+	/* Transition */
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: #235CF2;
+	--p50: #e9effe;
+	--p75: #a5bcfa;
+	--p100: #7fa0f7;
+	--p200: #4878f4;
+	--p300: #235cf2;
+	--p400: #1940a9;
+	--p500: #153894;
+
+	--s1: #FCB407;
+	
+
+	--active: #235CF2;
+
+	--ratting: #FFC700;
+	
+	--n0: #FFFFFF;
+	--n00: #070707;
+	--n10: #fafafa;
+	--n20: #f5f5f6;
+	--n30: #ebebec;
+	--n40: #dedfe0;
+	--n50: #bfc1c4;
+	--n60: #b0b2b6;
+	--n70: #a3a5aa;
+	--n80: #94969c;
+	--n90: #85878e;
+	--n100: #757880;
+	--n200: #666971;
+	--n300: #575a63;
+	--n400: #4a4e57;
+	--n500: #3b3f49;
+	--n600: #2e323d;
+	--n700: #1c212d;
+	--n800: #0d121f;
+	--n900: #000513;
+
+	--bg1: #F5F5F6;
+	--bg2: #fff;
+}

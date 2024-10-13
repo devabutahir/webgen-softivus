@@ -1,0 +1,62 @@
+//Team Style
+.team-item{
+    .team-content{
+        position: absolute;
+        transition: all 0.5s;
+        transform: scale(0);
+        opacity: 0;
+        h5{
+            a{
+                &:hover{
+                    color: var(--n0);
+                }
+            }
+        }
+    }
+    .social-media{
+        li{
+            a{
+                @include box(36);
+                i{
+                    color: var(--n0);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .blue-print{
+        position: absolute;
+        right: 0;
+        top: 0;
+        filter: brightness(25);
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background: rgba(237, 84, 33, 0.708);
+        transition: all 0.5s;
+    }
+    &:hover{
+        .team-content{
+            transform: scale(1);
+            opacity: 1;
+        }
+        .blue-print{
+            opacity: 1;
+        }
+        .insta-icon{
+            opacity: 1;
+            visibility: visible;
+        }
+        &::before{
+            left: 0;
+        }
+    }
+}
+//Team Style

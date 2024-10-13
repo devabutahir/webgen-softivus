@@ -1,0 +1,1781 @@
+// home page
+
+.hero-section {
+    padding-top: 80px;
+
+    @include screen(sm) {
+        padding-top: 100px;
+    }
+
+    @include screen(md) {
+        padding-top: 150px;
+    }
+
+    @include screen(lg) {
+        padding-top: 200px;
+    }
+}
+
+// social list
+.hero-social-area {
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+    left: 10px;
+
+    .arrow-icon {
+        max-height: 150px;
+        height: 100%;
+    }
+
+    .social-items {
+        li a {
+            @include box(36);
+            border: 1px solid rgba($primary2, 0.30);
+            background: $primary4;
+            transition: $transition;
+
+            @include screen(md) {
+                @include box(48);
+            }
+
+            @include screen(lg) {
+                @include box(60);
+            }
+
+            &:hover {
+                background: $primary2;
+                border-color: $primary2;
+                color: $primary;
+            }
+        }
+    }
+
+    @include screen(xxl) {
+        left: 30px;
+    }
+
+    @include screen(3xl) {
+        left: 80px;
+    }
+
+    @include screen(4xl) {
+        left: 150px;
+    }
+
+}
+
+.scroll-line {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 1;
+    animation: scrollLine 5s infinite;
+
+    img {
+        max-height: 300px;
+        height: 100%;
+    }
+}
+
+.circle-line {
+    border-radius: 50rem;
+    background: $primary2;
+    padding: 12px 8px;
+    margin-right: 10px;
+
+    @include screen(xl) {
+        width: 110px;
+        height: 70px;
+    }
+
+    .circle-ball {
+        width: 48px;
+        height: 48px;
+        border-radius: 50rem;
+        background: $primary;
+        transition: $transition;
+    }
+
+    .circle-arrow {
+        max-width: 48px;
+        transform: translateX(20px);
+    }
+
+    &:hover {
+        .circle-ball {
+
+            width: 96px;
+        }
+    }
+}
+
+.circle-line2 {
+    display: flex;
+    align-items: center;
+    border-radius: 50rem;
+    border: 1px solid $n50;
+    padding: 1px 14px 1px 15px;
+
+    @include screen(md) {
+        width: 150px;
+        height: 60px;
+    }
+
+    @include screen(lg) {
+        width: 180px;
+        height: 70px;
+    }
+
+    @include screen(xl) {
+        width: 215px;
+        height: 86px;
+    }
+
+    .circle-ball-1 {
+        border-radius: 50rem;
+        background: $n0;
+        transition: $transition;
+
+        @include screen(md) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include screen(lg) {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include screen(xl) {
+            width: 84px;
+            height: 84px;
+        }
+    }
+
+    .circle-ball-2 {
+        border-radius: 50rem;
+        background: $secondary;
+        transition: $transition;
+        border: 4px solid $primary4;
+
+        @include screen(md) {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include screen(lg) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include screen(xl) {
+            width: 76px;
+            height: 76px;
+        }
+    }
+
+    .circle-arrow {
+        max-width: 72px;
+        transform: translateX(-20px);
+    }
+}
+
+.circle-text-area {
+    @include screen(lg) {
+        transform: translateY(40px) translateX(35px);
+    }
+
+    @include screen(xl) {
+        transform: translateY(40px);
+    }
+
+    .arrow-shape {
+        height: 70px;
+        width: 1px;
+    }
+}
+
+.circle-text-body {
+    width: 170px;
+    height: 170px;
+    position: relative;
+
+    .circle-text-shape {
+        @include box(116);
+        background: $primary2;
+    }
+
+    .circle-text {
+        position: absolute;
+        height: 100%;
+        animation: rotateText 10s linear infinite;
+        z-index: 1;
+
+        p {
+            span {
+                position: absolute;
+                transform-origin: 0 85px;
+
+            }
+        }
+    }
+}
+
+// banner section
+.banner-3d-slider-area {
+
+    .swiper-slide {
+        width: 100%;
+        max-width: 250px;
+
+        @include screen(sm) {
+            max-width: 270px;
+        }
+
+        @include screen(md) {
+            max-width: 300px;
+        }
+
+        @include screen(lg) {
+            max-width: 380px;
+        }
+
+        @include screen(3xl) {
+            max-width: 440px;
+        }
+
+    }
+}
+
+.banner-slider-2-area {
+    transform: translateY(-60px);
+    z-index: 10;
+    margin-bottom: 20px;
+
+    .banner-text-slider {
+        width: 110%;
+        margin-left: -5%;
+
+        .swiper-wrapper {
+            -webkit-transition-timing-function: linear !important;
+            -o-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+        }
+    }
+
+    .banner-text-area-1 {
+        rotate: 10deg;
+        margin-top: 60px;
+
+        .banner-text-slider {
+            background: $primary2;
+            color: $primary;
+        }
+    }
+
+    .banner-text-area-2 {
+        rotate: -12deg;
+        margin-top: -105px;
+
+        .banner-text-slider {
+            background: $primary4;
+            color: $n0;
+        }
+    }
+
+    .show-btn {
+        border: 1px solid $primary2;
+        @include box(150);
+
+        @include screen(md) {
+            @include box(200);
+        }
+
+        @include screen(lg) {
+            @include box(250);
+        }
+
+        @include screen(xxl) {
+            @include box(300);
+        }
+
+        @include screen(4xl) {
+            @include box(350);
+        }
+
+        a {
+            color: $primary;
+            background: $primary2;
+            @include box(120);
+
+            @include screen(md) {
+                @include box(180);
+            }
+
+            @include screen(lg) {
+                @include box(220);
+            }
+
+            @include screen(xxl) {
+                @include box(270);
+            }
+
+            @include screen(4xl) {
+                @include box(310);
+            }
+        }
+    }
+}
+
+// service section 
+.title-border-box {
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background: rgba($primary2, 0.25);
+        bottom: -30px;
+        left: 30px;
+    }
+
+    &::before {
+        left: unset;
+        right: 30px;
+    }
+}
+
+.feature-box {
+    padding: 8px 16px 8px 12px;
+    transition: $transition;
+
+    @include screen(lg) {
+        padding: 12px 20px 12px 16px;
+
+    }
+
+    .feature-icon {
+        background: $primary4;
+        color: $primary2;
+        transition: $transition;
+        @include box(40);
+
+        @include screen(lg) {
+            @include box(52);
+        }
+    }
+
+    &:hover {
+        background: $primary4;
+
+        .feature-icon {
+            background: $primary;
+        }
+    }
+}
+
+.service-slider {
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide-active {
+        .service-card {
+
+            background: $primary2;
+
+            .btn-area {
+                opacity: 1;
+            }
+
+            .service-text,
+            .service-title {
+                color: $primary;
+            }
+
+        }
+    }
+}
+
+.service-card {
+    background: $primary4;
+    max-width: 416px;
+    width: 100%;
+    transition: $transition;
+
+    .btn-area {
+        opacity: 0;
+        transition: $transition;
+    }
+
+    .service-img {
+        max-width: 320px;
+        width: 100%;
+        max-height: 150px;
+        height: 100%;
+    }
+
+    .service-text {
+        color: $body-text;
+    }
+
+    &:hover {
+        background: $primary2;
+
+        .btn-area {
+            opacity: 1;
+        }
+
+        .service-text,
+        .service-title {
+            color: $primary;
+        }
+    }
+}
+
+.tags-animation-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 400px;
+    border-radius: 0 0 200px 200px;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(34, 81, 67, 0.44) 0%, rgba(34, 81, 67, 0.00) 100%);
+
+    .tags-container {
+        border-radius: inherit;
+    }
+
+    .tags-container>canvas {
+        background: transparent !important;
+        position: relative;
+    }
+}
+
+// our work
+.our-work-img {
+    max-width: 100px;
+    width: 100%;
+
+    img {
+        animation: pulse 2s infinite;
+    }
+}
+
+.our-work-section {
+    .card-body {
+        background: $primary4;
+        transition: $transition;
+
+        .card-icon {
+            @include box(60);
+            color: $primary;
+            background: $primary2;
+            transition: $transition;
+        }
+
+        .card-banner-area {
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .card-banner-area-2 {
+            max-width: 185px;
+            width: 100%;
+        }
+
+        .card-banner-area-3 {
+            max-width: 330px;
+            width: 100%;
+            max-height: 450px;
+            height: 100%;
+        }
+
+        .card-banner-area-4 {
+            max-width: 350px;
+            width: 100%;
+            max-height: 330px;
+            height: 100%;
+        }
+
+        .card-banner-area-5 {
+            max-width: 350px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+        }
+
+        &:hover {
+            background: $primary2;
+
+            .card-icon {
+                background: $primary;
+                color: $primary2;
+            }
+
+            .card-title,
+            .card-text {
+                color: $primary;
+            }
+        }
+    }
+}
+
+//financial planning
+.financial-planing-section {
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: $primary;
+    }
+}
+
+.financial-card-wrapper {
+    margin-top: 180px;
+}
+
+.financial-card {
+    position: relative;
+    perspective: 900px;
+    transition: .6s ease;
+    will-change: transform;
+    filter: drop-shadow(0px -9px 60px rgba(0, 0, 0, 0.30));
+
+    &.mt-nagetive {
+        margin-top: -180px;
+    }
+
+    &:hover {
+        perspective: 2000px;
+        transform: translateY(-180px) rotate(0);
+
+        * {
+            color: $primary;
+        }
+
+        .card-background {
+            background: $primary2;
+
+            .sl-number {
+                color: $primary;
+            }
+
+            .animated-image {
+                img {
+                    opacity: 1;
+                    animation: zigZag 5s linear infinite;
+                }
+            }
+        }
+    }
+
+    .card-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background: $primary4;
+        transform-style: preserve-3d;
+        transform: rotateX(-10deg) translateZ(-5px);
+        transition: .3s ease;
+        z-index: 1;
+
+        .animated-image {
+            img {
+                opacity: 0;
+            }
+        }
+
+        .sl-number {
+            color: $primary2;
+        }
+    }
+
+    .card-content {
+        position: relative;
+        transform: rotateX(-10deg) translateZ(-5px);
+        transition: .4s ease;
+        z-index: 5;
+    }
+}
+
+// cta section
+.cta-section {
+    overflow: visible;
+
+    .banner-area {
+        max-width: 700px;
+        width: 100%;
+
+        @include screen(3xl) {
+            max-height: 800px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-10%, -15%);
+        }
+    }
+}
+
+// how it work section
+.how-it-work {
+    background: $primary4;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    &::after {
+        right: 0;
+        transform: rotate(317deg) translate(0%, 100%);
+        background: linear-gradient(320deg, #49FFC8 5.3%, rgba(73, 255, 200, 0.00) 102.1%);
+    }
+
+    &::before {
+        transform: rotate(-135deg) translate(0%, -100%);
+        left: 0;
+        background: linear-gradient(203deg, #49FFC8 5.3%, rgba(73, 255, 200, 0.00) 102.1%);
+    }
+
+    .how-it-work-card {
+        background: rgba($secondary2, 0.20);
+        transition: $transition;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: $secondary2;
+        }
+
+        .count-number {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include box(60);
+            border-bottom: 1px solid $secondary2;
+            background: $primary4;
+
+            @include screen(md) {
+                @include box(80);
+            }
+
+            @include screen(lg) {
+                @include box(100);
+            }
+
+
+            span {
+                @include box(36);
+                background: $primary2;
+
+                @include screen(md) {
+                    @include box(48);
+                }
+
+                @include screen(lg) {
+                    @include box(64);
+                }
+            }
+        }
+
+        .banner-area {
+            max-width: 260px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+            margin: auto;
+        }
+    }
+}
+
+// testimonial section 
+.testimonial-slider {
+    .testimonial-card {
+        background: $primary4;
+        transition: $transition;
+        width: 100%;
+
+        @include screen(md) {
+            max-width: 546px;
+        }
+
+        @include screen(lg) {
+            max-width: 746px;
+        }
+
+        .ts-thumb {
+            @include box(60);
+        }
+
+        .quote-icon {
+            svg {
+                stroke: $n0;
+                transition: $transition;
+                width: 64px;
+                height: 64px;
+
+                @include screen(lg) {
+                    width: 104px;
+                    height: 104px;
+                }
+            }
+        }
+
+        &:hover {
+            background: $primary2;
+
+            * {
+                color: $primary !important;
+            }
+
+            .quote-icon {
+                svg {
+                    stroke: $primary;
+                }
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        .testimonial-card {
+            background: $primary2;
+
+            * {
+                color: $primary !important;
+            }
+
+            .quote-icon {
+                svg {
+                    stroke: $primary;
+                }
+            }
+        }
+    }
+}
+
+// download app section
+.download-app-banner {
+    max-width: 722px;
+    max-height: 851px;
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45%;
+        height: 45%;
+        transform: translate(-50%, -50%);
+        background: $secondary2;
+        z-index: -1;
+        opacity: 0.5;
+        filter: blur(100px);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .bg-muckup {
+        animation: rotateRight 20s linear infinite;
+    }
+}
+
+
+.circle-loader {
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        border: 1px solid $secondary2;
+        z-index: -1;
+        animation: circle_loader 3s linear infinite;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid $secondary2;
+            z-index: -1;
+            border-radius: 50%;
+            animation: circle_loader 4s linear infinite;
+        }
+    }
+
+    :first-child {
+        animation-delay: 1s;
+
+        &::after,
+        &::before {
+            animation-delay: 1.5s;
+        }
+    }
+
+    :nth-child(2) {
+        animation-delay: 2s;
+
+        &::after,
+        &::before {
+            animation-delay: 2.5s;
+        }
+    }
+
+    :last-child {
+        animation-delay: 3s;
+
+        &::after,
+        &::before {
+            animation-delay: 3.5s;
+        }
+    }
+}
+
+
+// work with section
+.work-with-brand {
+    .work-with-brand-wrapper {
+        border-top: 1px solid $n70;
+        border-bottom: 1px solid $n70;
+
+        .work-with-content {
+            max-width: 200px;
+            padding-right: 40px;
+            width: 100%;
+            border-right: 1px solid $n70;
+
+            @include screen(md) {
+                max-width: 250px;
+                padding-right: 80px;
+            }
+
+            @include screen(lg) {
+                max-width: 350px;
+                padding-right: 120px;
+            }
+        }
+
+        .brand-slider-area {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.brand-swiper,
+.testimonial-slider {
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+    }
+}
+
+
+// about page
+
+.about-hero-section {
+    &::after {
+        height: 80%;
+    }
+
+    .hero-social-area {
+        @include screen(lg) {
+            transform: translate(0px, -70%);
+        }
+    }
+
+    .highlight-text {
+
+        span {
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: rgba($n0, 0.05);
+            position: absolute;
+            top: 40%;
+            right: -15%;
+            transform: rotate(-90deg);
+            z-index: -1;
+
+            @include screen(sm) {
+                font-size: 100px;
+                right: -15%;
+            }
+
+            @include screen(md) {
+                font-size: 120px;
+                right: -18%;
+            }
+
+            @include screen(lg) {
+                font-size: 150px;
+                right: -17%;
+            }
+
+            @include screen(xxl) {
+                right: -19%;
+                font-size: 180px;
+            }
+
+            @include screen(3xl) {
+                right: -17%;
+            }
+
+            @include screen(4xl) {
+                right: -15%;
+                font-size: 200px;
+            }
+        }
+    }
+
+    .about-banner-1 {
+        img {
+            width: 100%;
+        }
+
+        @include screen(lg) {
+            direction: rtl;
+            max-width: unset;
+
+            img {
+                width: unset;
+            }
+
+        }
+    }
+}
+
+.circle-text-area-2 {
+    transform: translate(-135px 80px);
+}
+
+// where excellence meet section
+.where-exce-meet {
+    .rounded-arrow {
+        max-width: 288px;
+        max-height: 112px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-75%, 0%);
+        z-index: -1;
+    }
+
+    .excellence-card {
+        .counter-card {
+            max-width: 130px;
+            width: 100%;
+        }
+
+        .inner-card-content {
+            max-width: 350px;
+            width: 100%;
+        }
+    }
+}
+
+// team section
+.team-section {
+
+    .team-card {
+        .team-card-shape {
+            max-width: 300px;
+            max-height: 450px;
+            width: 100%;
+            height: 100%;
+            background: $primary4;
+            border-radius: 50rem;
+            overflow: hidden;
+            transition: $transition;
+
+            @include screen(md) {
+                max-width: 416px;
+                max-height: 615px;
+            }
+
+            .team-card-border {
+                width: calc(100% - 60px);
+                height: calc(100% - 60px);
+                margin: 30px;
+                border: 1px dashed $n0;
+                border-spacing: 10px;
+                transition: $transition;
+                border-radius: inherit;
+                position: relative;
+
+                .team-card-img {
+                    max-width: 400px;
+                    max-height: 552px;
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+                    transform: translateY(40px);
+                    transition: $transition;
+                }
+            }
+        }
+
+        &:hover {
+            .team-card-shape {
+                background: $primary2;
+
+                .team-card-border {
+                    border-color: $primary;
+
+                    .team-card-img {
+                        transform: translateY(40px) scale(1.1);
+                    }
+                }
+            }
+
+            .title {
+                color: $primary2;
+            }
+        }
+
+        .team-social-list {
+            a {
+                &:hover {
+                    color: $primary2;
+                }
+            }
+        }
+    }
+}
+
+//our values section
+.our-values-section {
+    .our-values-card {
+        @include screen(md) {
+            width: calc(100% / 2 - 12px);
+        }
+
+        .our-values-card-number {
+            background: $primary2;
+            color: $n900;
+
+            @include box(40);
+
+            @include screen(sm) {
+                @include box(60);
+            }
+
+            @include screen(md) {
+                @include box(80);
+            }
+
+            @include screen(lg) {
+                @include box(100);
+            }
+
+            @include screen(xxl) {
+                @include box(132);
+            }
+        }
+    }
+}
+
+// feature page
+.feature-hero {
+    .hero-social-area {
+        top: 10%;
+    }
+
+    .banner-card-area {
+        .banner-card {
+
+            &.card-big {
+                .card-img {
+                    max-width: 192px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            &.card-small {
+                .card-img {
+                    max-width: 140px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                &.card-center {
+                    .card-img {
+                        max-width: 110px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// work with section
+.work-with-brand-2 {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        bottom: 0;
+        z-index: -1;
+        background: rgba($primary4, 0.30);
+    }
+
+    .work-with-brand-wrapper {
+
+        .work-with-content {
+            max-width: 200px;
+            width: 100%;
+            border-right: 1px solid $n70;
+
+            @include screen(lg) {
+                max-width: 350px;
+            }
+        }
+
+        .brand-slider-area {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+//feature section 2
+.feature-section-2 {
+    .feature-card {
+        background: $primary4;
+        transition: $transition;
+
+        .icon {
+            color: $n0;
+            transition: $transition;
+            background: unset;
+        }
+
+        .desc-text {
+            color: $body-text;
+            transition: $transition;
+        }
+
+        .round-btn {
+            border-color: $n0;
+            color: $n0;
+            transition: $transition;
+        }
+
+        &:hover {
+            background: $primary2;
+
+            .icon,
+            .title,
+            .desc-text {
+                color: $primary;
+            }
+        }
+    }
+}
+
+//faq section
+.faq-section {
+    .faq-banner {
+        z-index: 1;
+
+        .faq-qs {
+            max-width: 100px;
+            top: 20%;
+            left: 50%;
+            transform: translate(40%, -60%);
+            z-index: -1;
+            animation: dancing 10s linear infinite alternate-reverse;
+
+            @include screen(xxl) {
+                max-width: 150px;
+            }
+        }
+
+        .faq-qb {
+            max-width: 200px;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-20%, 5%);
+            z-index: -1;
+            animation: rotateY 10s linear infinite alternate-reverse;
+
+            @include screen(xxl) {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+
+// services page
+// hero section
+.hero-counter-area {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: $primary2;
+
+    @include screen(lg) {
+        width: 262px;
+        height: 262px;
+    }
+}
+
+.service-section {
+    .service-card {
+        max-width: unset;
+
+        .service-img {
+            margin: auto
+        }
+    }
+}
+
+// service details page
+.icon {
+    @include box(60);
+    color: $primary;
+    background: $primary2;
+    transition: $transition;
+}
+
+// loan page
+.loan-card {
+    background: $primary4;
+    transition: $transition;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: right;
+        transform: scaleX(0);
+        background: $primary2;
+        border-radius: inherit;
+    }
+
+    .loan-card-icon {
+        color: $primary2;
+        transition: $transition;
+    }
+
+    .title {
+        color: $n0;
+        text-decoration: underline;
+        transition: $transition;
+    }
+
+    .desc-text {
+        color: $body-text;
+        transition: $transition;
+    }
+
+    &:hover {
+        background: transparent;
+
+        &::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .loan-card-icon,
+        .title,
+        .desc-text {
+            color: $primary;
+        }
+    }
+}
+
+.loan-process-card {
+    .loan-process-card-icon {
+        max-width: 196px;
+        max-height: 196px;
+        min-height: 196px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .number-bg {
+        @include box(40);
+        background: $primary2;
+        color: $primary;
+    }
+}
+
+// account page 
+.account-type-card {
+    background: $primary4;
+    transition: $transition;
+
+    .icon {
+        @include box(60);
+        color: $n0;
+        background: $primary;
+        transition: $transition;
+
+        @include screen(md) {
+            @include box(80);
+        }
+
+        @include screen(lg) {
+            @include box(100);
+        }
+    }
+
+    .desc-text {
+        color: $body-text;
+        transition: $transition;
+    }
+
+    &:hover {
+        background: $primary2;
+
+        .title,
+        .desc-text {
+            color: $primary;
+        }
+
+        .icon {
+            color: $primary2;
+        }
+
+        .link-btn-2 {
+            color: $primary;
+
+            .btn-icon {
+                border-color: $primary;
+            }
+
+            &:hover {
+                .btn-icon {
+                    background: $primary;
+                    border-color: $primary;
+                    color: $primary2;
+                }
+            }
+        }
+    }
+}
+
+// account details
+.sav-acc-card {
+    .icon {
+        color: $n0;
+        @include box(60);
+
+        @include screen(md) {
+            @include box(80);
+        }
+
+        @include screen(lg) {
+            @include box(100);
+        }
+
+        @include screen(xl) {
+            @include box(120);
+        }
+    }
+}
+
+// credit  card page
+.credit-card-card {
+    .card-img {
+        background: $primary4;
+        transition: $transition;
+    }
+
+    .credit-card-btn {
+        transition: $transition;
+        color: $primary2;
+        border-color: $primary2;
+    }
+
+    &:hover {
+        .card-img {
+            background: $primary2;
+        }
+
+        .credit-card-btn {
+            color: $primary;
+            background: $primary2;
+        }
+    }
+}
+
+// team details page
+.team-details-section {
+    .team-details-content {
+        border-left: 1px solid rgba($n0, 0.25);
+    }
+}
+
+.team-social-list {
+    li {
+        a {
+            @include box(40);
+            border: 1px solid rgba($n0, 0.25);
+            color: $n0;
+            transition: $transition;
+
+            &:hover {
+                background: $primary2;
+                border-color: $primary;
+                color: $primary;
+            }
+        }
+    }
+}
+
+// auth page
+.authentication-section {
+
+    .auth-pt {
+        padding-top: 60px;
+    }
+
+    .auth-pb {
+        padding-bottom: 60px;
+    }
+
+    @include screen(md) {
+        .auth-pt {
+            padding-top: 80px;
+        }
+
+        .auth-pb {
+            padding-bottom: 80px;
+        }
+    }
+
+    @include screen(lg) {
+        .auth-pt {
+            padding-top: 130px;
+        }
+
+        .auth-pb {
+            padding-bottom: 130px;
+        }
+    }
+
+    @include screen(xl) {
+        .auth-pt {
+            padding-top: 230px;
+        }
+
+        .auth-pb {
+            padding-bottom: 230px;
+        }
+    }
+
+    .auth-quote-area-bg {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 200%;
+            z-index: -2;
+            background: rgba($primary4, 0.30);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            @include box(400);
+            z-index: -1;
+            background: $primary2;
+            display: none;
+
+            @include screen(sm) {
+                display: block;
+            }
+        }
+    }
+
+    &.sign-up-page {
+        .auth-quote-area-bg {
+            &::after {
+                left: 0;
+                z-index: -2;
+                background: rgba($primary4, 0.30);
+            }
+
+            &::before {
+                right: 0;
+                transform: translate(90%, 50%);
+
+                @include screen(lg) {
+                    transform: translate(130%, 50%);
+                }
+            }
+        }
+
+        .finger-print {
+            transform: translate(-15%, -15%);
+            z-index: -1;
+        }
+    }
+
+    &.sign-in-page {
+        .auth-quote-area-bg {
+            &::after {
+                right: 0;
+                z-index: -2;
+                background: rgba($primary4, 0.30);
+            }
+
+            &::before {
+                left: 0;
+                transform: translate(-90%, 50%);
+
+                @include screen(lg) {
+                    transform: translate(-120%, 50%);
+                }
+            }
+        }
+
+        .finger-print {
+            transform: translate(15%, -15%);
+            z-index: -1;
+        }
+    }
+
+    .auth-quote-card {
+        .card-thumb {
+            overflow: hidden;
+            @include box(60);
+
+            @include screen (sm) {
+                @include box(80);
+            }
+
+            @include screen (lg) {
+                @include box(100);
+            }
+        }
+    }
+}
+
+// forget password page and confirm mail page
+.confirm-gmail-section,
+.forget-password-section {
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        z-index: -2;
+        background: rgba($primary4, 0.70);
+    }
+
+    &::before {
+        content: "";
+        @include box(400);
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        background: $primary2;
+        display: none;
+
+        @include screen(sm) {
+            display: block;
+        }
+    }
+
+    .form-area {
+        .icon {
+            @include box(80);
+            color: $primary2;
+            background: $primary4;
+            transition: $transition;
+
+            @include screen(md) {
+                @include box(100);
+            }
+
+            @include screen(lg) {
+                @include box(120);
+            }
+        }
+    }
+}
+
+.forget-password-section {
+    &::before {
+        left: 0;
+        transform: translate(-80%, 50%);
+
+        @include screen(lg) {
+            transform: translate(-50%, 50%);
+        }
+    }
+}
+
+.confirm-gmail-section {
+    &::before {
+        right: 0;
+        transform: translate(80%, 50%);
+
+        @include screen(lg) {
+            transform: translate(50%, 50%);
+        }
+    }
+}
+
+// contact page 
+.contact-us-section {
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 50%;
+        width: 100%;
+        z-index: -2;
+        background: rgba($primary4, 0.30);
+    }
+
+    .contact-us-card {
+        position: relative;
+        background: $primary4;
+        transition: $transition;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transform-origin: right;
+            transform: scaleX(0);
+            background: $primary2;
+            border-radius: inherit;
+        }
+
+        .icon {
+            @include box(80);
+            color: $primary;
+            background: $primary2;
+            transition: $transition;
+
+            @include screen(md) {
+                @include box(100);
+            }
+
+            @include screen(xl) {
+                @include box(120);
+            }
+
+        }
+
+        &:hover {
+            background: transparent;
+
+            &::after {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+
+            .title,
+            .desc-text {
+                color: $primary;
+            }
+
+            .border-bottom {
+                border-color: $primary !important;
+            }
+
+            .icon {
+                background: $primary4;
+                color: $primary2 !important;
+            }
+        }
+    }
+}
+
+.contact-us-form {
+    background: rgba($primary4, 0.70);
+
+    .contact-us-banner {
+        max-width: 250PX;
+        width: 100%;
+
+        img {
+            animation: pulse 5s linear infinite alternate-reverse;
+        }
+    }
+
+    .shape-image {
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate(50%, -50%);
+
+        animation: pulse2 8s linear infinite alternate-reverse;
+
+        @keyframes pulse2 {
+            0% {
+                transform: translate(50%, -50%) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(50%, -50%) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    }
+}

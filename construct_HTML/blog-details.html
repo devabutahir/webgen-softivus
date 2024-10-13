@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required ==== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Keywords -->
+    <meta name="keywords" content="boot, Bootstrap, Construct360 - Constructing HTML Template">
+    <!--  Description -->
+    <meta name="description" content="Construct360 - Constructing HTML Template">
+    <!-- Title -->
+    <title>Construct360 - Constructing HTML Template</title>
+    <!-- Favicon/x-icon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <!-- Bootstrap Min 5.2.3 Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Swiper Slider Css-->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <!-- Odometer Counter Css -->
+    <link rel="stylesheet" href="assets/css/plugins/odometer-min.css">
+    <!-- Nice Select Css -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <!-- Magnifiq Popup Css -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <!-- Aos Animation Css -->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <!-- Main Style.min.css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="toggleMain-controls">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Custom Header Start -->
+    <header class="header-section n0-bg">
+        <div class="container">
+            <div class="main-navbar">
+                <nav class="navbar-custom">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="index.html" class="nav-brand d-block d-lg-none">
+                            <img class="w-100" src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                        <div class="d-flex">
+                            <button class="navbar-toggle-btn d-block d-lg-none" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="search-getquote d-lg-none d-flex align-items-cetner gap-xxl-5 gap-xl-4 gap-lg-4 gap-3">
+                            <button type="button" class="p-0 m-0" data-bs-toggle="modal" data-bs-target="#searchbar-modal">
+                                <i class="ph-bold ph-magnifying-glass n900-clr fs-five"></i>
+                            </button>
+                            <a href="contact.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 p1-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                Get A Quote
+                            </a>
+                            <button type="button" class="bar-toggles d-center">
+                                <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 20.4286C8 21.2964 8.71638 22 9.6 22H30.4C31.2836 22 32 21.2964 32 20.4286C32 19.5607 31.2836 18.8571 30.4 18.8571H9.6C8.71638 18.8571 8 19.5608 8 20.4286ZM30.4 12.5714H1.6C0.716375 12.5714 0 11.8678 0 11C0 10.1322 0.716375 9.42857 1.6 9.42857H30.4C31.2836 9.42857 32 10.1322 32 11C32 11.8678 31.2836 12.5714 30.4 12.5714ZM30.4 3.14286H16C15.1164 3.14286 14.4 2.43928 14.4 1.57143C14.4 0.703646 15.1164 -3.54222e-07 16 -3.54222e-07H30.4C31.2836 -3.54222e-07 32 0.703646 32 1.57143C32 2.43928 31.2836 3.14286 30.4 3.14286Z" fill="black"/>
+                                </svg>                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle-item">
+                        <div class="d-flex w-100 flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between mt-5 mt-lg-0">
+                            <a href="index.html" class="navbar-brand d-lg-block d-none">
+                                <img class="w-100" src="assets/images/logo/logo.png" alt="logo">
+                            </a>
+                            <div class="header-location d-flex align-items-center gap-2">
+                                <div class="marker-icon">
+                                    <i class="ph-fill ph-map-pin"></i>
+                                </div>
+                                <p class="n900-clr fw-500">
+                                    42 Mamnoun Street, Saba 
+                                    <span class="d-block fw-500">New York,UK</span> 
+                                </p>
+                            </div>
+                            <ul class="custom-nav d-lg-flex d-grid gap-xxl-8 gap-xl-6 gap-lg-4 gap-4">
+                                <li class="menu-item position-relative">
+                                    <a href="index.html" class="n900-clr">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <a href="about.html" class="n900-clr">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Service
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="service.html" class="n900-color">Service</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="service-details.html" class="n900-color">Service Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Project
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="project.html" class="n900-color">Project</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="project-details.html" class="n900-color">Project Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Blog
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="blog.html" class="n900-color">Blog</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="blog-details.html" class="n900-color">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <a href="contact.html" class="n900-clr">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header-social d-xl-flex d-none align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <li>
+                                    <a href="#">
+                                        <svg width="266" height="512" viewBox="0 0 266 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M172.651 512V278.47H251.006L262.761 187.432H172.651V129.318C172.651 102.968 179.938 85.0116 217.766 85.0116L265.933 84.9918V3.56429C257.603 2.4818 229.01 0 195.73 0C126.236 0 78.6594 42.4183 78.6594 120.301V187.432H0.0668945V278.47H78.6594V512H172.651Z" fill="#010002"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="480" height="332" viewBox="0 0 480 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M470.11 48.2763C464.578 27.7128 448.365 11.5031 427.804 5.96584C390.243 -4.3114 239.994 -4.3114 239.994 -4.3114C239.994 -4.3114 89.751 -4.3114 52.1895 5.57659C32.0242 11.1078 15.4162 27.7166 9.885 48.2763C0 85.8348 0 163.728 0 163.728C0 163.728 0 242.012 9.885 279.177C15.4215 299.738 31.629 315.948 52.1925 321.485C90.1462 331.765 240 331.765 240 331.765C240 331.765 390.243 331.765 427.804 321.877C448.368 316.343 464.578 300.133 470.115 279.572C479.997 242.011 479.997 164.122 479.997 164.122C479.997 164.122 480.392 85.8341 470.11 48.2763ZM192.157 235.686V91.7666L317.097 163.726L192.157 235.686Z" fill="black"/>
+                                        </svg>                                                                                 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M511.872 512L512 511.979V324.203C512 232.341 492.224 161.579 384.832 161.579C333.205 161.579 298.56 189.909 284.416 216.768H282.923V170.155H181.099V511.979H287.125V342.72C287.125 298.155 295.573 255.061 350.763 255.061C405.141 255.061 405.952 305.92 405.952 345.579V512H511.872ZM8.448 170.176H114.603V512H8.448V170.176ZM61.4827 0C27.5413 0 0 27.5413 0 61.4827C0 95.424 27.5413 123.541 61.4827 123.541C95.424 123.541 122.965 95.424 122.965 61.4827C122.954 45.1799 116.473 29.5481 104.945 18.0203C93.4172 6.49255 77.7854 0.0113017 61.4827 0Z" fill="black"/>
+                                        </svg>                                                                                                                             
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="502" height="512" viewBox="0 0 502 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M298.662 216.797L485.167 0H440.972L279.029 188.242L149.687 0H0.504883L196.097 284.655L0.504883 512H44.7031L215.718 313.21L352.314 512H501.496L298.652 216.797H298.662ZM238.127 287.163L218.309 258.818L60.6284 33.2716H128.514L255.765 215.295L275.582 243.64L440.993 480.241H373.107L238.127 287.174V287.163Z" fill="black"/>
+                                        </svg> 
+                                    </a>                                                                               
+                                </li>
+                            </ul>
+                            <div class="search-getquote d-lg-flex d-none align-items-cetner gap-xxl-5 gap-xl-4 gap-lg-4 gap-3">
+                                <button type="button" class="p-0 m-0" data-bs-toggle="modal" data-bs-target="#searchbar-modal">
+                                    <i class="ph-bold ph-magnifying-glass n900-clr fs-five"></i>
+                                </button>
+                                <a href="contact.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 p1-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Get A Quote
+                                </a>
+                                <button type="button" class="bar-toggles d-center">
+                                    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 20.4286C8 21.2964 8.71638 22 9.6 22H30.4C31.2836 22 32 21.2964 32 20.4286C32 19.5607 31.2836 18.8571 30.4 18.8571H9.6C8.71638 18.8571 8 19.5608 8 20.4286ZM30.4 12.5714H1.6C0.716375 12.5714 0 11.8678 0 11C0 10.1322 0.716375 9.42857 1.6 9.42857H30.4C31.2836 9.42857 32 10.1322 32 11C32 11.8678 31.2836 12.5714 30.4 12.5714ZM30.4 3.14286H16C15.1164 3.14286 14.4 2.43928 14.4 1.57143C14.4 0.703646 15.1164 -3.54222e-07 16 -3.54222e-07H30.4C31.2836 -3.54222e-07 32 0.703646 32 1.57143C32 2.43928 31.2836 3.14286 30.4 3.14286Z" fill="black"/>
+                                    </svg>                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Custom Header End -->
+
+    <!-- Sidebar Start -->
+    <div class="cmn-styles sidebar-wrapper">
+        <div class="d-flex ramove-area align-items-center justify-content-between">
+            <a href="index.html" class="side-logo">
+                <img src="assets/images/logo/favicon.png" alt="img">
+            </a>
+            <div class="side-remove bar-toggles">
+                <i class="ph ph-x"></i>
+            </div>
+        </div>
+        <div class="box">
+            <p class="n50-clr mb-xxl-8 mb-7">
+                Construct360 is dedicated to delivering top-notch construction services with a focus on quality, reliability, and innovation. Our experienced team ensures each project is completed to the highest standards. 
+            </p>
+            <h5 class="n900-clr mb-xxl-4 mb-4">
+                Gallery
+            </h5>
+           <div class="sideba-gallery mb-xxl-8 mb-7">
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb1.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb2.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb3.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb4.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb5.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb6.png" alt="img">
+                </div>
+           </div>
+           <h5 class="n900-clr mb-xxl-4 mb-4">
+             Info
+            </h5>
+           <ul class="side-infocontact d-grid gap-3 mb-xxl-8 mb-7">
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </span>
+                    <a href="#">
+                        42 Mamnoun Street, Saba New York,UK 
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-phone-call"></i>
+                    </span>
+                    <a href="#">
+                       (8547) 652 458 4512
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-envelope"></i>
+                    </span>
+                    <a href="#">
+                       example2541@gmai.com
+                    </a>
+                </li>
+           </ul>
+           <h5 class="n900-clr mb-xxl-4 mb-4">
+                Social
+            </h5>
+           <ul class="header-social">
+                <li>
+                    <a href="#">
+                        <svg width="266" height="512" viewBox="0 0 266 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M172.651 512V278.47H251.006L262.761 187.432H172.651V129.318C172.651 102.968 179.938 85.0116 217.766 85.0116L265.933 84.9918V3.56429C257.603 2.4818 229.01 0 195.73 0C126.236 0 78.6594 42.4183 78.6594 120.301V187.432H0.0668945V278.47H78.6594V512H172.651Z" fill="#010002"/>
+                        </svg>                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="480" height="332" viewBox="0 0 480 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M470.11 48.2763C464.578 27.7128 448.365 11.5031 427.804 5.96584C390.243 -4.3114 239.994 -4.3114 239.994 -4.3114C239.994 -4.3114 89.751 -4.3114 52.1895 5.57659C32.0242 11.1078 15.4162 27.7166 9.885 48.2763C0 85.8348 0 163.728 0 163.728C0 163.728 0 242.012 9.885 279.177C15.4215 299.738 31.629 315.948 52.1925 321.485C90.1462 331.765 240 331.765 240 331.765C240 331.765 390.243 331.765 427.804 321.877C448.368 316.343 464.578 300.133 470.115 279.572C479.997 242.011 479.997 164.122 479.997 164.122C479.997 164.122 480.392 85.8341 470.11 48.2763ZM192.157 235.686V91.7666L317.097 163.726L192.157 235.686Z" fill="black"/>
+                        </svg>                                                                                 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M511.872 512L512 511.979V324.203C512 232.341 492.224 161.579 384.832 161.579C333.205 161.579 298.56 189.909 284.416 216.768H282.923V170.155H181.099V511.979H287.125V342.72C287.125 298.155 295.573 255.061 350.763 255.061C405.141 255.061 405.952 305.92 405.952 345.579V512H511.872ZM8.448 170.176H114.603V512H8.448V170.176ZM61.4827 0C27.5413 0 0 27.5413 0 61.4827C0 95.424 27.5413 123.541 61.4827 123.541C95.424 123.541 122.965 95.424 122.965 61.4827C122.954 45.1799 116.473 29.5481 104.945 18.0203C93.4172 6.49255 77.7854 0.0113017 61.4827 0Z" fill="black"/>
+                        </svg>                                                                                                                             
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="502" height="512" viewBox="0 0 502 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M298.662 216.797L485.167 0H440.972L279.029 188.242L149.687 0H0.504883L196.097 284.655L0.504883 512H44.7031L215.718 313.21L352.314 512H501.496L298.652 216.797H298.662ZM238.127 287.163L218.309 258.818L60.6284 33.2716H128.514L255.765 215.295L275.582 243.64L440.993 480.241H373.107L238.127 287.174V287.163Z" fill="black"/>
+                        </svg> 
+                    </a>                                                                               
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Common Overlay -->
+    <div class="cmn-overlay"></div>
+    <!-- Common Overlay -->
+
+    <!-- Common Body start -->
+    <main class="main overflow-hidden n0-bg">
+
+        <!--- Breadcrumnd -->
+        <section class="breadcrumnd-hero mt-lg-24 mt-20 position-relative">
+            <div class="container">
+                <div class="breadcrumnd-content">
+                    <h2 class="n0-clr mb-xxl-3 mb-2">
+                        Blog Details
+                    </h2>
+                    <ul class="breadcrumnd-list d-flex justify-content-start align-items-center gap-xxl-2 gap-2">
+                        <li>
+                            <a href="index.html" class="fw-500 text-capitalize n0-clr">
+                                Home 
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <i class="ph ph-caret-right fs-seven n0-clr"></i>
+                        </li>
+                        <li class="fw-500 text-capitalize n0-clr">
+                            Blog Details 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--- Breadcrumnd -->
+
+        <!-- Modal Custom Searchbar --> 
+<div class="search-popup-custom">
+            <div class="modal fade" id="searchbar-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <input type="text" placeholder="Search Here...">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Custom Searchbar --> 
+
+        <!-- Blog Section -->
+        <section class="blog-section n0-bg position-relative pt-120 pb-120">
+            <div class="container">
+                <div class="row g-xxl-6 g-4">
+                    <div class="col-lg-8">
+                        <div class="blog-details-left">
+                            <div class="thumb w-100 mb-xxl-10 mb-xl-8 mb-lg-7 mb-6" data-aos="fade-up" data-aos-duration="1200">
+                                <img src="assets/images/blog/blog-big.png" alt="img" class="w-100">
+                            </div>
+                            <div class="admin-info d-flex flex-wrap align-items-center gap-xxl-6 gap-4 mb-xxl-4 mb-4">
+                                <div class="admin-item d-flex align-items-center gap-2">
+                                    <img src="assets/images/blog/admin1.png" alt="img" class="radius-circle">
+                                    <span class="n50-clr fw-500">
+                                        By Admin
+                                    </span>
+                                </div>
+                                <div class="admin-line"></div>
+                                <div class="admin-item d-flex align-items-center gap-2">
+                                    <i class="ph-fill ph-calendar-blank p1-clr"></i>
+                                    <span class="n50-clr fw-500">
+                                        20/05/2024
+                                    </span>
+                                </div>
+                                <div class="admin-line"></div>
+                                <div class="admin-item d-flex align-items-center gap-2">
+                                    <i class="ph-fill ph-chat-circle-dots p1-clr"></i>
+                                    <span class="n50-clr fw-500">
+                                        1 Comment
+                                    </span>
+                                </div>
+                                <div class="admin-line"></div>
+                                <div class="admin-item d-flex align-items-center gap-2">
+                                    <i class="ph-fill ph-tag p1-clr"></i>
+                                    <span class="n50-clr fw-500">
+                                        Pre-Construction
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="content-box mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                                <h2 class="n900-clr mb-xxl-5 mb-xl-4 mb-3">
+                                    Top 10 Tips for a Successful Renovation
+                                </h2>
+                                <p class="pra-clr mb-xxl-5 mb-3">
+                                    Embarking on a home renovation can be both exciting and challenging. To  help you navigate the process and achieve the best results, we've  compiled our top 10 tips for a successful home renovation. Start by  planning ahead and setting a realistic budget to keep your project on  track. Hiring experienced professionals and obtaining the necessary  permits ensures a smooth process. Prioritize quality materials and stay  flexible to handle unexpected challenges. Effective communication with  your contractor is crucial, as is focusing on functionality and not just  aesthetics. Pay attention to small details that make a big difference,  and remember to enjoy the journey. By following these tips, you'll  transform your space.
+                                </p>
+                                <p class="pra-clr">
+                                    Hiring experienced professionals and obtaining necessary permits are  crucial steps to ensure a smooth process. Prioritize quality materials  for durability and stay flexible to manage unforeseen challenges.  Effective communication with your contractor is key to avoiding  misunderstandings. Focus on functionality as well as aesthetics, and pay  attention to the small details that can make a big difference. Enjoy  the journey and celebrate each milestone.
+                                </p>
+                            </div>
+                            <div class="qotes-content position-relative p1-bg p-xxl-10 p-xl-7 p-lg-5 p-3 mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                                <p class="n0-clr mb-2">
+                                    "Home renovation is not just about changing the physical structure of  your house; it's about transforming your living space”
+                                </p>
+                                <span class="n0-clr industry fw-500">
+                                    Industry
+                                </span>
+                                <img src="assets/images/blog/quote.png" alt="img" class="quote">
+                            </div>
+                            <div class="content-box mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                                <h3 class="n900-clr mb-xxl-5 mb-xl-4 mb-3">
+                                    Make Real Time a Day Services
+                                </h3>
+                                <p class="pra-clr mb-xxl-5 mb-3">
+                                    Experience the convenience and efficiency of our real-time, same-day  construction services. At Construct360, we understand that time is of  the essence. Our dedicated team of professionals is ready to tackle  urgent repairs, quick renovations, and immediate project needs with  speed and precision. Utilizing the latest technologies and streamlined  processes, we ensure high-quality results without compromising on  craftsmanship. Whether it’s an emergency fix or a fast-track project,  we’ve got you covered. Contact us today to learn more about our  real-time, same-day services.
+                                </p>
+                                <ul class="cmn-listing d-grid gap-xxl-3 gap-2 mb-xxl-10 mb-xl-8 mb-7" data-aos="fade-up" data-aos-duration="2000">
+                                    <li class="d-flex align-items-center gap-2 fs-seven pra-clr">
+                                        <span class="cmn-dot"></span>
+                                        Benefit from immediate and efficient construction services tailored to your urgent needs.
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 fs-seven pra-clr">
+                                        <span class="cmn-dot"></span>
+                                        Our skilled team is prepared to handle emergency repairs, last-minute renovations, and fast-track projects.
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 fs-seven pra-clr">
+                                        <span class="cmn-dot"></span>
+                                        We use the latest technologies and streamlined processes to ensure prompt and high-quality results.
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 fs-seven pra-clr">
+                                        <span class="cmn-dot"></span>
+                                        Trust Construct360 to deliver expert craftsmanship without delays, maintaining high standards in every project.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-items-center gap-xxl-6 gap-sm-4 gap-3 mb-xxl-6 mb-xl-5 mb-5" data-aos="fade-up" data-aos-duration="1900">
+                                <div class="thumb">
+                                    <img src="assets/images/blog/blog-middle1.png" alt="img">
+                                </div>
+                                <div class="thumb">
+                                    <img src="assets/images/blog/blog-middle2.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="content-box mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                                <h2 class="n900-clr mb-xxl-5 mb-xl-4 mb-3">
+                                    Materials Science and Engineering
+                                </h2>
+                                <p class="pra-clr mb-xxl-6 mb-4">
+                                    Materials Science and Engineering is a dynamic field dedicated to  understanding and manipulating the properties of materials to develop  innovative solutions for various industries. It involves the study of  metals, ceramics, polymers, and composites to enhance their performance  and sustainability. By exploring the relationships between structure,  properties, and processing, materials scientists and engineers create  advanced materials that drive technological advancements in sectors such  as aerospace, healthcare, and electronics. At Construct360, we leverage  cutting-edge materials science to deliver superior construction  solutions, ensuring durability, efficiency, and environmental  responsibility in every project.
+                                </p>
+                                <ul class="cmn-listing d-grid gap-xxl-3 gap-2 mb-xxl-10 mb-xl-8 mb-7" data-aos="fade-up" data-aos-duration="2000">
+                                    <li class="d-flex align-items-center gap-2 fs-seven n900-clr">
+                                        <i class="ph-fill ph-check-circle p1-clr"></i>
+                                        So we came up with the idea that instead of limiting the lab to a restricted area of ​​the building
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 fs-seven n900-clr">
+                                        <i class="ph-fill ph-check-circle p1-clr"></i>
+                                        We make it quick, easy and convenient for scheduling to save time
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 fs-seven n900-clr">
+                                        <i class="ph-fill ph-check-circle p1-clr"></i>
+                                        Our promise is to be respectful of you and your home as if it were our own
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="related-tags-wrap d-flex align-items-center justify-content-between py-xxl-6 py-xl-5 py-4 mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                                <ul class="real-tag d-flex gap-2 flex-wrap">
+                                    <li class="fs18 fw-600 n900-clr pe-xl-4">
+                                        Tags:
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Building
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Electronics
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Garage
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Quality
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Envato
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex align-items-center gap-xxl-4 gap-3">
+                                    <span class="fs18 fw-600 n900-clr pe-xl-4">
+                                        Tags:
+                                    </span>
+                                    <a href="#" class="share-icon p1-bg d-center">
+                                        <i class="ph-fill ph-share-network fs-five n0-clr"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="comment-wrap mb-xxl-10 mb-xl-8 mb-7">
+                                <h4 class="n900-clr mb-xxl-6 mb-5">
+                                    1 Comment
+                                </h4>
+                                <div class="admin-replay-item d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center gap-xxl-4 gap-3">
+                                        <img src="assets/images/blog/admin2.png" alt="img">
+                                        <div class="cont">
+                                            <span class="n900-clr fw-700 d-block">
+                                                Admin
+                                            </span>
+                                            <span class="pra-clr">
+                                                Aoruck 17, 2024, at 4:30pm
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="shae-btn d-inline-flex align-items-center n0-clr gap-2 p1-bg py-1 px-3">
+                                        <i class="ph-fill ph-share-fat"></i>
+                                        Reply
+                                    </button>
+                                </div>
+                                <p class="pra-clr">
+                                    This article really highlights the importance of Materials Science and  Engineering in modern construction. The ability to manipulate and  enhance material properties is crucial for creating more durable and  sustainable buildings. I'm excited to see how Construct360 leverages  these advancements in their projects. Great read!"
+                                </p>
+                            </div>
+                            <div class="leave-comment-wrap">
+                                <div class="mb-xxl-6 mb-5">
+                                    <h4 class="n900-clr mb-2">
+                                        Leave A Comment
+                                    </h4>
+                                    <p class="pra-clr">
+                                        Your email address will not be published. Required fields are marked *
+                                    </p>
+                                </div>
+                                <form action="#" class="row g-xxl-6 g-4">
+                                    <div class="col-lg-6">
+                                        <div class="leave-grp">
+                                            <input type="text" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="leave-grp">
+                                            <input type="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="leave-grp">
+                                            <textarea name="message" rows="5" placeholder="Your Comment.."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mt-xxl-7">
+                                        <div class="form-check mb-4 d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label n900-clr fw-500" for="flexCheckDefault">
+                                                Save my name, email, and website in this browser for the next time I comment.
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 p1-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                            Post Comment
+                                            <i class="ph-bold ph-arrow-up-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-right d-grid gap-xxl-10 gap-xl-8 gap-6">
+                            <div class="blog-search details-border p-xxl-8 p-4">
+                                <h5 class="mb-xxl-5 mb-4 n900-clr fw-600">
+                                    Search
+                                </h5>
+                                <form action="#">
+                                    <input type="text" placeholder="Search">
+                                    <i class="ph ph-magnifying-glass"></i>
+                                </form>
+                            </div>
+                            <div class="service-right-box1 p-xxl-8 p-xl-7 p-lg-5 p-4">
+                                <h5 class="n900-clr mb-xxl-6 mb-4">
+                                    Our Services
+                                </h5>
+                                <ul class="servie-list d-grid gap-xxl-4 gap-3">
+                                    <li>
+                                        <a href="#" class="fw-500 d-block n900-clr n100-bg py-xxl-3 py-3 px-xxl-6 px-xl-4 px-3">
+                                            Residential Construction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fw-500 d-block n900-clr n100-bg py-xxl-3 py-3 px-xxl-6 px-xl-4 px-3">
+                                            Commercial Construction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fw-500 d-block n900-clr n100-bg py-xxl-3 py-3 px-xxl-6 px-xl-4 px-3">
+                                            Renovations and Remodeling
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fw-500 d-block n900-clr n100-bg py-xxl-3 py-3 px-xxl-6 px-xl-4 px-3">
+                                            Project Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fw-500 d-block n900-clr n100-bg py-xxl-3 py-3 px-xxl-6 px-xl-4 px-3">
+                                            Sustainable Building
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-details-list details-border p-xxl-8 p-4">
+                                <h5 class="mb-xxl-6 mb-4 n900-clr">
+                                    Recent Post
+                                </h5>
+                                <ul class="recent-inner d-grid gap-xxl-6 gap-xl-5 gap-4">
+                                    <li class="d-flex align-items-center gap-xxl-5 gap-3">
+                                        <span class="thumb">
+                                            <img src="assets/images/blog/recent1.png" alt="img">
+                                        </span>
+                                        <span class="content">
+                                            <span class="dates p1-clr fw-500 mb-1">
+                                                April 17, 2024
+                                            </span>
+                                            <a href="blog-details.html" class="fw-700 n900-clr d-block">
+                                                Upgrades To Your House  That Will Help You Save...
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-5 gap-3">
+                                        <span class="thumb">
+                                            <img src="assets/images/blog/recent2.png" alt="img">
+                                        </span>
+                                        <span class="content">
+                                            <span class="dates p1-clr fw-500 mb-1">
+                                                April 17, 2024
+                                            </span>
+                                            <a href="blog-details.html" class="fw-700 n900-clr d-block">
+                                                The Bill And Adele Jonas Center Is Completed By Alten Construction.
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-xxl-5 gap-3">
+                                        <span class="thumb">
+                                            <img src="assets/images/blog/recent3.png" alt="img">
+                                        </span>
+                                        <span class="content">
+                                            <span class="dates p1-clr fw-500 mb-1">
+                                                April 17, 2024
+                                            </span>
+                                            <a href="blog-details.html" class="fw-700 n900-clr d-block">
+                                                Interest Rate In Small Loans Now Is Lowest For Your Dream
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-details-list details-border p-xxl-8 p-4">
+                                <h5 class="mb-xxl-6 mb-4 n900-clr">
+                                    Tags
+                                </h5>
+                                <ul class="tag d-flex flex-wrap gap-2">
+                                    <li>
+                                        <a href="#">
+                                            Construction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Building
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Civil
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Electronics
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Quality
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Engineering
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Power
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Energy Sector
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Repair
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+
+    </main>
+    <!-- Common Body End -->
+
+    <!--Footer Quote-->
+    <section class="footer-quote">
+        <div class="foter-quote-wrapper position-relative">
+            <div class="container">
+               <div class="row">
+                    <div class="col-xl-10 position-relative">
+                        <div class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between gap-4">
+                            <h2 class="n0-clr">
+                                Get Started? Request Your Quote Today!
+                            </h2>
+                            <div class="d-flex align-items-center gap-xxl-4 gap-3">
+                                <a href="contact.html" class="cmn-btn text-capitalize n900-clr overflow-hidden d-inline-flex align-items-center n0-border gap-2 n0-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Get A Quote
+                                    <i class="ph-bold ph-arrow-up-right"></i>
+                                </a>
+                                <a href="service.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 n0-border pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Our Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer Quote-->
+
+    <!--Footer-->
+    <footer class="footer n900-bg cus-z1 position-relative pt-120">
+        <div class="footer-top position-relative pb-120">
+            <div class="container">
+                <div class="footer-top-inner">
+                    <div class="row g-lg-2 g-7">
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1600">
+                            <div class="footer-widget">
+                                <a href="index.html" class="footer-logo mb-xxl-6 mb-5 d-block">
+                                    <img src="assets/images/logo/logo-white.png" alt="img">
+                                </a>
+                                <p class="max-320 fw-400 n0-clr mb-xxl-6 mb-5 d-block">
+                                    At Construct360, we are dedicated to delivering exceptional construction  services with a focus on quality, 
+                                </p>
+                                <ul class="social-media d-flex align-items-center gap-xxl-3 gap-2">
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-facebook-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-instagram-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-youtube-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-linkedin-logo"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="box">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                       Main Pages 
+                                    </h5>
+                                    <ul class="footer-link d-grid gap-xxl-3 gap-3">
+                                        <li>
+                                            <a href="index.html" class="n0-clr">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html" class="n0-clr">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service.html" class="n0-clr">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service-details.html" class="n0-clr">
+                                                Services Single
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html" class="n0-clr">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="n0-clr">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6" data-aos="zoom-in-right" data-aos-duration="2000">
+                            <div class="footer-widget d-flex">
+                                <div class="box">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                        Contact
+                                    </h5>
+                                    <ul class="contact-info-content d-grid gap-4">
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-envelope"></i>
+                                            <a href="#" class="n0-clr">
+                                                contact@construct360.com
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-phone-call"></i>
+                                            <a href="#" class="n0-clr">
+                                                (414)  687 - 5892 
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-map-pin"></i>
+                                            <a href="#" class="n0-clr">
+                                                794 Mcalliest St san fransci
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1800">
+                            <div class="footer-widget ps-xxl-10 ps-xl-8 ps-lg-6 pe-4">
+                                <div class="box newsletter-footer">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                        Newsletter 
+                                    </h5>
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter Your Email">
+                                        <div class="btns">
+                                            <button type="submit" class="submit-btn p1-bg d-center">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="n0-clr text-center copyright py-xxl-6 py-xl-5 py-5">
+                        Copyright 2024 &copy; <span class="currentYear"></span> <a href="index.html" class="p1-clr text-uppercase">CONSTURCT360</a> Theme, All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Shape -->
+        <img src="assets/images/footer/footer-discus.png" alt="img" class="footer-shape">
+    </footer>
+    <!--Footer-->
+    
+
+
+
+    <!-- js Jquery start -->
+    <script src="assets/js/plugins/jquery.js"></script>
+    <!-- js Viewport start -->
+    <script src="assets/js/plugins/viewpot.js"></script>
+    <!-- js Bootstrap start -->
+    <script src="assets/js/plugins/bootstrap.js"></script>
+    <!-- js Magnificpopup start -->
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <!-- js Swiper start -->
+    <script src="assets/js/plugins/swiper.js"></script>
+    <!-- js Odometer start -->
+    <script src="assets/js/plugins/odometer.js"></script>
+    <!-- js Aos Animation start -->
+    <script src="assets/js/plugins/aos.js"></script>
+    <!-- js Nice Select start -->
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <!-- js Phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- js Mian start -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

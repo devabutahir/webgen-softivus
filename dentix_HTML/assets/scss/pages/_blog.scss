@@ -1,0 +1,169 @@
+//Blog Items 
+.blog-items{
+    .cmn-btn{
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+    &:hover{
+        .readmore-btn{
+            color: var(--s2);
+            .read-icon{
+                transform: scale(0.6);
+            }
+            .readmore-text{
+                color: var(--s2);
+            }
+        }
+        .thumb{
+            img{
+                transform: scale(1.1)
+            }
+        }
+    }
+}
+.plus-element{
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    animation: rotates 10s linear infinite;
+    @include maxQuery(991){
+        left: 20px;
+        top: 20px;
+        width: 25px;
+    }
+}
+//Blog Items 
+
+//Common Readmore Btn
+.readmore-btn{
+    .read-icon{
+        @include box(60);
+        transition: all 0.8s;
+    }
+    &:hover{
+        .read-icon{
+          
+        }
+        .readmore-text{
+            
+        }
+    }
+    @include maxQuery(1399){
+        .read-icon{
+            @include box(40);
+        }
+    }
+}
+//Common Readmore Btn
+
+//Accordion Tabbing
+.content-area{
+    display: none;
+}
+.accordion-single{
+    border-bottom: 1px solid var(--n900);
+    border-radius: 0;
+    .minus{
+        display: none;
+    }
+    &.active{
+        border-bottom: 1px solid var(--s2);
+       .plus{
+        display: none;
+       }
+       .minus{
+        display: block;
+       } 
+    }
+}
+.faq-content{
+    .cmn-btn{
+        &:hover{
+            color: var(--n0);
+        }
+    }
+}
+.two-string{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: zin 2s linear infinite;
+    @include maxQuery(1199){
+        width: 80px;
+        top: 30px;
+        left: 30px;
+    }
+    @include maxQuery(767){
+        width: 50px;
+        top: 10px;
+        left: 10px;
+    }
+}
+.brash-element{
+    position: absolute;
+    right: 190px;
+    top: 130px;
+    @include maxQuery(1199){
+        display: none;
+    }
+}
+//Accordion Tabbing
+
+//Blog Details
+.blog-details-wrap{
+    .make-sure{
+        h4{
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .david-box{
+        .thumb{
+           width: 228px;
+           img{
+            width: 100%;
+           } 
+        }
+        .content{
+            width: calc(100% - 228px);
+        }
+    }
+    @include maxQuery(767){
+        .david-box{
+            .thumb{
+               width: 180px;
+            }
+            .content{
+                width: calc(100% - 180px);
+            }
+        }
+    }
+    @include maxQuery(550){
+        .david-box{
+            flex-wrap: wrap;
+            justify-content: center;
+            .thumb{
+               width: 200px;
+            }
+            .content{
+                text-align: center;
+                width: calc(100%);
+                .fs20{
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+//Blog Details
+
+//brash element
+.brash-element2{
+    top: 40px;
+    @include maxQuery(1600){
+        display: none;
+    }
+}
+//brash element

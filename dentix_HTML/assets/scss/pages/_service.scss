@@ -1,0 +1,216 @@
+//Service Section
+.sevice-wrap1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include maxQuery(1600){
+        display: grid;
+        justify-content: center;
+        margin-bottom: 14px;
+        .service-inner1{
+            gap: 14px;
+        }
+        .section-title{
+            margin-bottom: 50px;
+            margin-top: 70px;
+        }
+    }
+    @include maxQuery(1399){
+        .service-inner1{
+            .service-cmn-items{
+                height: initial;
+                width: initial;
+            }
+        }
+    }
+    @include maxQuery(575){
+        .service-inner1{
+            flex-wrap: wrap;
+            .service-cmn-items{
+                width: 100%;
+            }
+        }
+    }
+}
+.service-wrap2{
+    .service-inner2{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    @include maxQuery(1600){
+        .service-inner2{
+            gap: 14px;
+        }
+    }
+    @include maxQuery(1399){
+        .service-inner2{
+            .service-cmn-items{
+                height: initial
+            }
+        }
+    }
+    @include maxQuery(767){
+        .service-inner2{
+            justify-content: center;
+            flex-wrap: wrap;
+            .service-cmn-items{
+                width: 100%;
+            }
+        }
+    }
+}
+.service-cmn-items{
+    width: 492px;
+    height: 422px;
+    transition: all 0.5s;
+    .cmn-arrows{
+        transform: rotate(-30deg);
+    }
+    .icons{
+        i{
+            transition: all 0.5s;
+        }
+    }
+    &:hover{
+        border-color: var(--s2);
+        h5{
+            a{
+                color: var(--s2);
+            }
+        }
+    }
+}
+.service-bgadd{
+    background: var(--bg1);
+    border: 1px solid var(--n900);
+    &:hover{
+        background: var(--s2);
+        .icons{
+            i{
+                color: var(--n1);
+            }
+        }
+        h5{
+            a{
+                color: var(--n0);
+            }
+        }
+        p{
+            color: var(--n0);
+        }
+        .cmn-arrows{
+            background: var(--n0);
+            i{
+                color: var(--s2);
+            }
+        }
+    }
+}
+.service-bgadd-bg2{
+    background: var(--bg2);
+    border: 1px solid var(--n900);
+    &:hover{
+        background: var(--s2);
+        .icons{
+            i{
+                color: var(--n1);
+            }
+        }
+        h5{
+            a{
+                color: var(--n0);
+            }
+        }
+        p{
+            color: var(--n0);
+        }
+        .cmn-arrows{
+            background: var(--n0);
+            i{
+                color: var(--s2);
+            }
+        }
+    }
+    @include maxQuery(1600){
+        height: initial;
+    }
+}
+.service-bgtrans{
+    border: 1px solid var(--bg2);
+    background: var(--bg2);
+    &:hover{
+        border-color: var(--bg1);
+        background: var(--bg1);
+    }
+    @include maxQuery(1600){
+        background: var(--bg1);
+        border: 1px solid var(--n900);
+    }
+}
+//Service Section
+
+//Service Value Section
+.value-items{
+    .icons{
+       @include box(70); 
+    }
+    &:hover{
+        background: var(--s2);
+        border-color: var(--s2);
+        .icons{
+            background: var(--n0);
+            i{
+                color: var(--s2);
+            }
+        }
+        a,
+        p{
+            color: var(--n0);
+        }
+    }
+}
+//Service Value Section
+
+//Service Details
+.service-details-right{
+    .envelopicon{
+        @include box(90);
+    }
+    .free-form{
+        input,
+        .nice-select{
+            border: unset;
+            background: var(--s7);
+            padding: 15px 30px;
+            color: var(--pra);
+            border-radius: 0px;
+            .current{
+                color: var(--n900);
+            }
+            .list{
+                li{
+                    color: var(--pra);
+                }
+            }
+        }
+        ::placeholder{
+            color: var(--n900);
+        }
+    }
+    @include maxQuery(1399){
+        .free-form{
+            input,
+            .nice-select{
+                padding: 13px 20px;
+            }
+        }
+        .envelopicon{
+            @include box(60);
+            img{
+                width: 29px;
+            }
+        } 
+    }
+}
+//Service Details

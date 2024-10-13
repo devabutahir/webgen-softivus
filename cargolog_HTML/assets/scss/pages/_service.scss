@@ -1,0 +1,50 @@
+//service section
+.service-section-v02{
+    .service-browse-item{
+        &::before{
+           transition: all 0.5s;
+        }
+        .service-content{
+            padding: 0 35px 35px;
+        }
+    }
+}
+//service section
+
+//service Details section
+.service-details-right{
+    .flight-wrap{
+        a{
+            transition: all 0.4s;
+            display: block;
+            &:hover{
+                background: var(--p1);
+                color: var(--n0);
+            }
+        }
+    }
+    form{
+        input{
+            border: 1px solid var(--n0);
+            color: var(--n0);
+            padding: 10px 24px;
+            font-size: 14px;
+            border-radius: 0;
+            margin-bottom: 20px;
+        }
+        ::placeholder{
+            color: var(--n0);
+        }
+    }
+    @include maxQuery(991){
+        .main-box-one{
+            width: 50%;
+        }
+    }
+    @include maxQuery(767){
+        .main-box-one{
+            width: 100%;
+        }
+    }
+}
+//service Details section

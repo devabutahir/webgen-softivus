@@ -1,0 +1,35 @@
+/*---------------------------------------
+    Template Name:  Traveloo HTML
+    Description:    Traveloo HTML Template
+    Author Name:    Pixelaxis
+    Author URI:     https://themeforest.net/user/pixelaxis
+    Theme URI:      https://themeforest.net/user/pixelaxis
+    Version:        1.0
+-----------------------------------------
+             Table of contents
+-----------------------------------------
+    color variables
+    Typography 
+    mixins
+    Pages styles
+---------------------------------------*/
+
+// plugins css
+@import "../assets/css/bootstrap-custom.css";
+@import "../assets/fonts/fill/style.css";
+@import "../assets/fonts/regular/style.css";
+@import "splitting/dist/splitting.css";
+@import "choices.js/public/assets/styles/choices.css";
+// @import "splitting/dist/splitting-cells.css";
+// Sass files
+// @import "bootstrap-custom"; // we use this file to customize bootstrap, after customize bootstrap we use customize version ( bootstrap-custom.css )
+@import "variables";
+@import "typography";
+@import "animation";
+@import "mixins";
+@import "components";
+@import "common";
+@import "header";
+@import "footer";
+@import "loader";
+@import "pages";

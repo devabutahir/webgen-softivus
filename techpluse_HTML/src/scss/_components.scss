@@ -1,0 +1,327 @@
+// button
+
+.primary-btn {
+    display: inline-block;
+    background: $primary-300;
+    color: $n900;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 140px;
+    width: 100%;
+    height: 40px;
+
+    &.btn-w-180 {
+        max-width: 180px;
+        width: 100%;
+    }
+
+    @include screen(sm) {
+        max-width: 160px;
+        width: 100%;
+
+        &.btn-w-180 {
+            max-width: 180px;
+        }
+    }
+
+    @include screen(lg) {
+        max-width: 180px;
+        width: 100%;
+        height: 60px;
+
+        &.btn-w-180 {
+            max-width: 180px;
+        }
+    }
+
+
+    .text {
+        position: absolute;
+        width: 100%;
+        transition: top 0.5s;
+        transform: translateY(-50%);
+        left: 0;
+        text-align: center;
+        min-width: max-content;
+    }
+
+    .front {
+        top: 50%;
+    }
+
+    .back {
+        top: 150%;
+    }
+
+    &:hover {
+        .front {
+            top: -150%;
+        }
+
+        .back {
+            top: 50%;
+        }
+    }
+}
+
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid $n0;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: $n0;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 600;
+
+    @include screen(sm) {
+        padding: 12px 24px;
+    }
+
+    @include screen(lg) {
+        padding: 16px 32px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.25);
+        top: 100%;
+        width: 140%;
+        height: 180%;
+        background: $n0;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%) scaleY(1) scaleX(1.45);
+        top: 180%;
+        width: 160%;
+        height: 190%;
+        background: $n0;
+        border-radius: 50%;
+        display: block;
+        transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+        z-index: -1;
+    }
+
+    .icon {
+        transition: $transition;
+        transform: translateX(0px);
+    }
+
+    &.black-btn {
+        color: $n900;
+        border-color: $n900;
+    }
+
+    &.small-btn {
+        padding: 8px 16px;
+
+        @include screen(sm) {
+            padding: 12px 24px;
+        }
+    }
+
+    &:hover {
+        border: 1px solid $secondary-50;
+
+        &::before {
+            top: -35%;
+            background: $secondary-50;
+            transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        }
+
+        &::after {
+            top: -45%;
+            background: $secondary-50;
+            transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        }
+
+        .icon {
+            transform: translateX(10px);
+        }
+
+        &.black-btn {
+            color: $n0;
+            border-color: $n0;
+        }
+
+        &.hover-primary {
+            color: $n0;
+            border-color: $n0;
+
+            &::before,
+            &::after {
+                background: $primary-500;
+            }
+        }
+    }
+}
+
+.social-items {
+    .icon {
+        @include box(40);
+        border-radius: unset;
+        border: 1px solid $n10;
+        color: $n0;
+        transition: $transition;
+
+        &:hover {
+            background: $primary-300;
+            color: $n900;
+        }
+    }
+
+    &.alt-color {
+        .icon {
+            border-color: $n900;
+            color: $n900;
+
+            &:hover {
+                background: $secondary-50;
+                color: $n0;
+            }
+        }
+    }
+}
+
+.tag-btn {
+    padding: 8px 16px;
+    color: $n500;
+    transition: $transition;
+    display: inline-flex;
+    background: $primary-75;
+
+
+    &:hover {
+        background: $n900;
+        color: $n0;
+    }
+}
+
+
+// input type checkbox
+.checkmark-checkbox {
+    .checkmark {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        // background: $n10;
+        transition: $transition;
+        border: 1px solid $n900;
+        cursor: pointer;
+    }
+
+    input:checked+.checkmark {
+
+        &:before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 6px;
+            height: 12px;
+            border: solid $n1000;
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+        }
+    }
+}
+
+
+// accordion area
+.accordion-area {
+    .accordion-item {
+        .accordion-header {
+            display: block;
+            cursor: pointer;
+            transition: $transition;
+
+            .accordion-icon {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                z-index: 1;
+
+                &::before {
+                    content: '\e136';
+                    font-family: 'phosphor';
+                    font-weight: 800;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: $n900;
+                    z-index: -1;
+                    transition: $transition;
+                }
+            }
+        }
+
+        .accordion-content {
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+            padding-top: 0;
+            transition: height 0.5s ease-out, padding 0.5s ease-in-out;
+        }
+
+        &.show {
+            .accordion-header {
+                .accordion-icon {
+                    &::before {
+                        content: '\e13c';
+                    }
+                }
+            }
+
+            .accordion-content {
+                transition: height 0.5s ease-out, padding 0.5s ease-in-out;
+                padding-top: 24px;
+                height: auto;
+            }
+        }
+    }
+
+    &.accordion-area-2 {
+        .accordion-item {
+            .accordion-header {
+                .accordion-icon {
+                    &::before {
+                        content: "\e3d4";
+                    }
+                }
+            }
+
+            &.show {
+                .accordion-header {
+                    .accordion-icon {
+                        &::before {
+                            content: "\e32a";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+// default root
+:root {
+	--head-font: "Playfair Display", serif;
+	--body-font: "Instrument Sans", sans-serif;
+	
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--p1: 255, 62, 116;
+	--p2: 8, 8, 8;
+
+	--s1: 255, 255, 255;
+	--s2: 244, 239, 233;
+
+	--n1: 100, 100, 102;
+
+	--gradient-p1: linear-gradient(180deg, rgba(153, 37, 70, 0.00) 0%, #FF3E74 95%);
+	--box-shadow-sm: 0px 6px 30px 0px rgba(0, 0, 0, 0.06);
+}

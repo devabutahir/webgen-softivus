@@ -1,0 +1,47 @@
+// Testimonia Style
+.green-testi{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.testimonial-spacig-wrap{
+    margin-right: -16%;
+    margin-left: 16%;
+    @include maxQuery(1700){
+        margin-right: -12%;
+        margin-left: 12%;
+    }
+    @include maxQuery(1600){
+        margin-right: -0%;
+        margin-left: 0%;
+    }
+}
+.testimonial-item{
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    .quotes{
+        font-size: 56px;
+        color: var(--n0);
+        opacity: 0.2;
+    }
+    .border-bottom-cus{
+        border-bottom: 1px solid var(--cmborder);
+        transition: all 0.4s;
+    }
+    &:hover{
+        .border-bottom-cus{
+            border-bottom: 1px solid rgba(0, 50, 45, 0.2);
+        }
+        background: var(--p1);
+        transition: all 0.4s;
+        span,p,h4,h5{
+            color: var(--n50);
+        }
+        .quotes{
+            color: var(--n50);
+            opacity: 1;
+        }
+    }
+}
+// Testimonia Style
+

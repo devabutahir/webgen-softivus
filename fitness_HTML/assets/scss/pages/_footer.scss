@@ -1,0 +1,24 @@
+.footer-section{
+    background-image: url(../images/footer-texture.png), url(../images/footer-shape.png);
+    background-repeat: no-repeat;
+    background-position: center right, top right;
+    background-size: cover, auto;
+    @include maxQuery(1199){
+        background-size: cover, 300px;
+    }
+    @include maxQuery(991){
+        background-size: cover, 150px;
+    }
+    .footer-bottom{
+        a{
+            &:hover{
+                color: rgba(var(--p1), 1);
+            }
+        }
+    }
+    .footer-img img{
+        @include maxQuery(991){
+            max-width: 70% !important;
+        }
+    }
+}

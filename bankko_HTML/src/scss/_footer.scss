@@ -1,0 +1,115 @@
+.footer-section {
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        transform: translateY(35%) translateX(-50%);
+        width: 90%;
+        height: 100%;
+        opacity: 0.1;
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        z-index: -1;
+        background: linear-gradient(180deg, #49FFC8 10%, rgba(73, 255, 200, 0) 62.23%);
+
+    }
+
+    .light-box-2 {
+        bottom: 0;
+        transform: translate(40%, 40%);
+    }
+
+    .footer-input {
+        width: 100%;
+        padding: 10px 16px;
+        border-radius: 50rem;
+        border: 1px solid rgba($n0, 0.25);
+        background: rgba($primary, 0.20);
+        color: $n0;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: $transition;
+
+        @include screen(sm) {
+            padding: 16px 32px;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $primary;
+        }
+
+        &::placeholder {
+            color: $n0;
+        }
+    }
+
+    .footer-btn {
+        @include box(36);
+        background: $n0;
+        color: $primary;
+        transition: $transition;
+
+        @include screen(sm) {
+            @include box(44);
+        }
+
+        @include screen(lg) {
+            @include box(60);
+        }
+
+        &:hover {
+            background: $primary;
+            color: $n0;
+        }
+    }
+
+    .footer-social-icons {
+        a {
+            @include box(40);
+            border: 1px solid rgba($n0, 0.25);
+            color: $n0;
+            font-size: 1.2rem;
+            transition: $transition;
+            border-radius: 12px;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                transform-origin: right;
+                transform: scaleX(0);
+                background: $n0;
+                border-radius: inherit;
+            }
+
+            &:hover {
+                color: $primary;
+                border-color: $primary;
+
+                &::after {
+                    transform-origin: left;
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    .download-app {
+        display: block;
+        max-width: 156px;
+        width: 100%;
+
+    }
+}

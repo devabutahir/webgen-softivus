@@ -1,0 +1,14 @@
+//Progress Bar
+.progress_bar_item{
+    .item_bar{
+        background: var(--bg1);
+        border-radius: 100px;
+        height: 11px;
+        .progress{
+            border-radius: 100px;
+            background: var(--p3);
+            height: 11px;
+        }
+    }
+}
+//Progress Bar

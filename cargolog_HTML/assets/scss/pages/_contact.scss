@@ -1,0 +1,157 @@
+//Contact Version One
+.contact-bg{
+    background: url(../../assets/images/contact/contact-v1.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-versio-content1{
+    height: 100%;
+}
+.form-grps-space{
+   input,
+   textarea{
+    padding: 16px 32px;
+   }
+    @include maxQuery(1399){
+        input,
+        textarea{
+            padding: 10px 19px;
+        }
+    }
+}
+.form-grps{
+    textarea,
+    input{
+        border: unset;
+        outline: none;
+        color: var(--n200);
+        background: var(--n0);
+        border-radius: 0;
+    }
+}
+.call-icon{
+    @include box(60);
+}
+//Contact Version One
+
+//Sponsor  reuseable
+.sponsor-inner1{
+    .sponsor-item{
+        border-bottom: 1px solid var(--n200);
+        &:not(:last-child){
+            border-right: 1px solid var(--n200);
+        }
+    }
+}
+.sponsor-inner2{
+    .sponsor-item{
+        &:not(:last-child){
+            border-right: 1px solid var(--n200);
+        }
+    }
+}
+.sponsor-item{
+    height: 290px;
+    width: 100%;
+    transition: all 0.5s;
+    img{
+        transition: all 0.5s;
+    }
+    &:hover{
+        background: var(--p1);
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+    @include maxQuery(1600){
+        height: 120px;
+    }
+    @include maxQuery(991){
+        height: 90px;
+        img{
+            width: 100px;
+        }
+    }
+    @include maxQuery(575){
+        height: 50px;
+        img{
+            width: 60px;
+        }
+    }
+}
+//Sponsor  reuseable
+
+//Contact Form
+.main-formwrap{
+    background: url(../../assets/images/contact/contact-formbg.png) no-repeat center center;
+    background-size: cover;
+    padding: 110px;
+    form{
+        .control-grp{
+            textarea,
+            input{
+                padding: 14px 32px;
+                background: var(--n0);
+                color: #666971;
+                border-radius: 0;
+                border: unset;
+                outline: none;
+            }
+            ::placeholder{
+                color: #666971;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        padding: 80px;
+        form{
+            .control-grp{
+                input{
+                    padding: 10px 18px;
+                }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        padding: 60px;
+    }
+    @include maxQuery(991){
+        padding: 40px;
+    }
+    @include maxQuery(767){
+        padding: 30px;
+    }
+    @include maxQuery(575){
+        padding: 20px;
+    }
+}
+.contact-office-item{
+    .thumb{
+        transition: all 0.4s;
+        img{
+            transition: all 0.4s;
+        }
+    }
+    .content{
+        .office-contact-info{
+            li{
+                .icon{
+                    @include box(36);
+                }
+            }
+        }
+    }
+    &:hover{
+        .thumb{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.white-hover{
+    &:hover{
+        color: var(--n0);
+    }
+}
+//Contact Form

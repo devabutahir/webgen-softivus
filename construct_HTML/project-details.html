@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required ==== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Keywords -->
+    <meta name="keywords" content="boot, Bootstrap, Construct360 - Constructing HTML Template">
+    <!--  Description -->
+    <meta name="description" content="Construct360 - Constructing HTML Template">
+    <!-- Title -->
+    <title>Construct360 - Constructing HTML Template</title>
+    <!-- Favicon/x-icon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <!-- Bootstrap Min 5.2.3 Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Swiper Slider Css-->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <!-- Odometer Counter Css -->
+    <link rel="stylesheet" href="assets/css/plugins/odometer-min.css">
+    <!-- Nice Select Css -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <!-- Magnifiq Popup Css -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <!-- Aos Animation Css -->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <!-- Main Style.min.css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="toggleMain-controls">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Custom Header Start -->
+    <header class="header-section n0-bg">
+        <div class="container">
+            <div class="main-navbar">
+                <nav class="navbar-custom">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="index.html" class="nav-brand d-block d-lg-none">
+                            <img class="w-100" src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                        <div class="d-flex">
+                            <button class="navbar-toggle-btn d-block d-lg-none" type="button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="search-getquote d-lg-none d-flex align-items-cetner gap-xxl-5 gap-xl-4 gap-lg-4 gap-3">
+                            <button type="button" class="p-0 m-0" data-bs-toggle="modal" data-bs-target="#searchbar-modal">
+                                <i class="ph-bold ph-magnifying-glass n900-clr fs-five"></i>
+                            </button>
+                            <a href="contact.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 p1-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                Get A Quote
+                            </a>
+                            <button type="button" class="bar-toggles d-center">
+                                <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 20.4286C8 21.2964 8.71638 22 9.6 22H30.4C31.2836 22 32 21.2964 32 20.4286C32 19.5607 31.2836 18.8571 30.4 18.8571H9.6C8.71638 18.8571 8 19.5608 8 20.4286ZM30.4 12.5714H1.6C0.716375 12.5714 0 11.8678 0 11C0 10.1322 0.716375 9.42857 1.6 9.42857H30.4C31.2836 9.42857 32 10.1322 32 11C32 11.8678 31.2836 12.5714 30.4 12.5714ZM30.4 3.14286H16C15.1164 3.14286 14.4 2.43928 14.4 1.57143C14.4 0.703646 15.1164 -3.54222e-07 16 -3.54222e-07H30.4C31.2836 -3.54222e-07 32 0.703646 32 1.57143C32 2.43928 31.2836 3.14286 30.4 3.14286Z" fill="black"/>
+                                </svg>                    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle-item">
+                        <div class="d-flex w-100 flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between mt-5 mt-lg-0">
+                            <a href="index.html" class="navbar-brand d-lg-block d-none">
+                                <img class="w-100" src="assets/images/logo/logo.png" alt="logo">
+                            </a>
+                            <div class="header-location d-flex align-items-center gap-2">
+                                <div class="marker-icon">
+                                    <i class="ph-fill ph-map-pin"></i>
+                                </div>
+                                <p class="n900-clr fw-500">
+                                    42 Mamnoun Street, Saba 
+                                    <span class="d-block fw-500">New York,UK</span> 
+                                </p>
+                            </div>
+                            <ul class="custom-nav d-lg-flex d-grid gap-xxl-8 gap-xl-6 gap-lg-4 gap-4">
+                                <li class="menu-item position-relative">
+                                    <a href="index.html" class="n900-clr">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <a href="about.html" class="n900-clr">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Service
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="service.html" class="n900-color">Service</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="service-details.html" class="n900-color">Service Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Project
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="project.html" class="n900-color">Project</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="project-details.html" class="n900-color">Project Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <button class="position-relative pe-5 n900-color cus-z1 text-uppercase">
+                                        Blog
+                                    </button>
+                                    <ul class="sub-menu p-lg-5">
+                                        <li class="menu-link py-1">
+                                            <a href="blog.html" class="n900-color">Blog</a>
+                                        </li>
+                                        <li class="menu-link py-1">
+                                            <a href="blog-details.html" class="n900-color">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item position-relative">
+                                    <a href="contact.html" class="n900-clr">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header-social d-xl-flex d-none align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <li>
+                                    <a href="#">
+                                        <svg width="266" height="512" viewBox="0 0 266 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M172.651 512V278.47H251.006L262.761 187.432H172.651V129.318C172.651 102.968 179.938 85.0116 217.766 85.0116L265.933 84.9918V3.56429C257.603 2.4818 229.01 0 195.73 0C126.236 0 78.6594 42.4183 78.6594 120.301V187.432H0.0668945V278.47H78.6594V512H172.651Z" fill="#010002"/>
+                                        </svg>                                            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="480" height="332" viewBox="0 0 480 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M470.11 48.2763C464.578 27.7128 448.365 11.5031 427.804 5.96584C390.243 -4.3114 239.994 -4.3114 239.994 -4.3114C239.994 -4.3114 89.751 -4.3114 52.1895 5.57659C32.0242 11.1078 15.4162 27.7166 9.885 48.2763C0 85.8348 0 163.728 0 163.728C0 163.728 0 242.012 9.885 279.177C15.4215 299.738 31.629 315.948 52.1925 321.485C90.1462 331.765 240 331.765 240 331.765C240 331.765 390.243 331.765 427.804 321.877C448.368 316.343 464.578 300.133 470.115 279.572C479.997 242.011 479.997 164.122 479.997 164.122C479.997 164.122 480.392 85.8341 470.11 48.2763ZM192.157 235.686V91.7666L317.097 163.726L192.157 235.686Z" fill="black"/>
+                                        </svg>                                                                                 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M511.872 512L512 511.979V324.203C512 232.341 492.224 161.579 384.832 161.579C333.205 161.579 298.56 189.909 284.416 216.768H282.923V170.155H181.099V511.979H287.125V342.72C287.125 298.155 295.573 255.061 350.763 255.061C405.141 255.061 405.952 305.92 405.952 345.579V512H511.872ZM8.448 170.176H114.603V512H8.448V170.176ZM61.4827 0C27.5413 0 0 27.5413 0 61.4827C0 95.424 27.5413 123.541 61.4827 123.541C95.424 123.541 122.965 95.424 122.965 61.4827C122.954 45.1799 116.473 29.5481 104.945 18.0203C93.4172 6.49255 77.7854 0.0113017 61.4827 0Z" fill="black"/>
+                                        </svg>                                                                                                                             
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg width="502" height="512" viewBox="0 0 502 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M298.662 216.797L485.167 0H440.972L279.029 188.242L149.687 0H0.504883L196.097 284.655L0.504883 512H44.7031L215.718 313.21L352.314 512H501.496L298.652 216.797H298.662ZM238.127 287.163L218.309 258.818L60.6284 33.2716H128.514L255.765 215.295L275.582 243.64L440.993 480.241H373.107L238.127 287.174V287.163Z" fill="black"/>
+                                        </svg> 
+                                    </a>                                                                               
+                                </li>
+                            </ul>
+                            <div class="search-getquote d-lg-flex d-none align-items-cetner gap-xxl-5 gap-xl-4 gap-lg-4 gap-3">
+                                <button type="button" class="p-0 m-0" data-bs-toggle="modal" data-bs-target="#searchbar-modal">
+                                    <i class="ph-bold ph-magnifying-glass n900-clr fs-five"></i>
+                                </button>
+                                <a href="contact.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 p1-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Get A Quote
+                                </a>
+                                <button type="button" class="bar-toggles d-center">
+                                    <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 20.4286C8 21.2964 8.71638 22 9.6 22H30.4C31.2836 22 32 21.2964 32 20.4286C32 19.5607 31.2836 18.8571 30.4 18.8571H9.6C8.71638 18.8571 8 19.5608 8 20.4286ZM30.4 12.5714H1.6C0.716375 12.5714 0 11.8678 0 11C0 10.1322 0.716375 9.42857 1.6 9.42857H30.4C31.2836 9.42857 32 10.1322 32 11C32 11.8678 31.2836 12.5714 30.4 12.5714ZM30.4 3.14286H16C15.1164 3.14286 14.4 2.43928 14.4 1.57143C14.4 0.703646 15.1164 -3.54222e-07 16 -3.54222e-07H30.4C31.2836 -3.54222e-07 32 0.703646 32 1.57143C32 2.43928 31.2836 3.14286 30.4 3.14286Z" fill="black"/>
+                                    </svg>                    
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Custom Header End -->
+
+    <!-- Sidebar Start -->
+    <div class="cmn-styles sidebar-wrapper">
+        <div class="d-flex ramove-area align-items-center justify-content-between">
+            <a href="index.html" class="side-logo">
+                <img src="assets/images/logo/favicon.png" alt="img">
+            </a>
+            <div class="side-remove bar-toggles">
+                <i class="ph ph-x"></i>
+            </div>
+        </div>
+        <div class="box">
+            <p class="n50-clr mb-xxl-8 mb-7">
+                Construct360 is dedicated to delivering top-notch construction services with a focus on quality, reliability, and innovation. Our experienced team ensures each project is completed to the highest standards. 
+            </p>
+            <h5 class="n900-clr mb-xxl-4 mb-4">
+                Gallery
+            </h5>
+           <div class="sideba-gallery mb-xxl-8 mb-7">
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb1.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb2.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb3.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb4.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb5.png" alt="img">
+                </div>
+                <div class="small-gl">
+                    <img src="assets/images/blog/blogb6.png" alt="img">
+                </div>
+           </div>
+           <h5 class="n900-clr mb-xxl-4 mb-4">
+             Info
+            </h5>
+           <ul class="side-infocontact d-grid gap-3 mb-xxl-8 mb-7">
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </span>
+                    <a href="#">
+                        42 Mamnoun Street, Saba New York,UK 
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-phone-call"></i>
+                    </span>
+                    <a href="#">
+                       (8547) 652 458 4512
+                    </a>
+                </li>
+                <li>
+                    <span class="icon d-center">
+                        <i class="ph-fill ph-envelope"></i>
+                    </span>
+                    <a href="#">
+                       example2541@gmai.com
+                    </a>
+                </li>
+           </ul>
+           <h5 class="n900-clr mb-xxl-4 mb-4">
+                Social
+            </h5>
+           <ul class="header-social">
+                <li>
+                    <a href="#">
+                        <svg width="266" height="512" viewBox="0 0 266 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M172.651 512V278.47H251.006L262.761 187.432H172.651V129.318C172.651 102.968 179.938 85.0116 217.766 85.0116L265.933 84.9918V3.56429C257.603 2.4818 229.01 0 195.73 0C126.236 0 78.6594 42.4183 78.6594 120.301V187.432H0.0668945V278.47H78.6594V512H172.651Z" fill="#010002"/>
+                        </svg>                                            
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="480" height="332" viewBox="0 0 480 332" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M470.11 48.2763C464.578 27.7128 448.365 11.5031 427.804 5.96584C390.243 -4.3114 239.994 -4.3114 239.994 -4.3114C239.994 -4.3114 89.751 -4.3114 52.1895 5.57659C32.0242 11.1078 15.4162 27.7166 9.885 48.2763C0 85.8348 0 163.728 0 163.728C0 163.728 0 242.012 9.885 279.177C15.4215 299.738 31.629 315.948 52.1925 321.485C90.1462 331.765 240 331.765 240 331.765C240 331.765 390.243 331.765 427.804 321.877C448.368 316.343 464.578 300.133 470.115 279.572C479.997 242.011 479.997 164.122 479.997 164.122C479.997 164.122 480.392 85.8341 470.11 48.2763ZM192.157 235.686V91.7666L317.097 163.726L192.157 235.686Z" fill="black"/>
+                        </svg>                                                                                 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M511.872 512L512 511.979V324.203C512 232.341 492.224 161.579 384.832 161.579C333.205 161.579 298.56 189.909 284.416 216.768H282.923V170.155H181.099V511.979H287.125V342.72C287.125 298.155 295.573 255.061 350.763 255.061C405.141 255.061 405.952 305.92 405.952 345.579V512H511.872ZM8.448 170.176H114.603V512H8.448V170.176ZM61.4827 0C27.5413 0 0 27.5413 0 61.4827C0 95.424 27.5413 123.541 61.4827 123.541C95.424 123.541 122.965 95.424 122.965 61.4827C122.954 45.1799 116.473 29.5481 104.945 18.0203C93.4172 6.49255 77.7854 0.0113017 61.4827 0Z" fill="black"/>
+                        </svg>                                                                                                                             
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="502" height="512" viewBox="0 0 502 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M298.662 216.797L485.167 0H440.972L279.029 188.242L149.687 0H0.504883L196.097 284.655L0.504883 512H44.7031L215.718 313.21L352.314 512H501.496L298.652 216.797H298.662ZM238.127 287.163L218.309 258.818L60.6284 33.2716H128.514L255.765 215.295L275.582 243.64L440.993 480.241H373.107L238.127 287.174V287.163Z" fill="black"/>
+                        </svg> 
+                    </a>                                                                               
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Common Overlay -->
+    <div class="cmn-overlay"></div>
+    <!-- Common Overlay -->
+
+    <!-- Common Body start -->
+    <main class="main overflow-hidden n0-bg">
+
+        <!--- Breadcrumnd -->
+        <section class="breadcrumnd-hero mt-lg-24 mt-20 position-relative">
+            <div class="container">
+                <div class="breadcrumnd-content">
+                    <h2 class="n0-clr mb-xxl-3 mb-2">
+                        Project Details
+                    </h2>
+                    <ul class="breadcrumnd-list d-flex justify-content-start align-items-center gap-xxl-2 gap-2">
+                        <li>
+                            <a href="index.html" class="fw-500 text-capitalize n0-clr">
+                                Home 
+                            </a>
+                        </li>
+                        <li class="mt-1">
+                            <i class="ph ph-caret-right fs-seven n0-clr"></i>
+                        </li>
+                        <li class="fw-500 text-capitalize n0-clr">
+                            Project Details 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--- Breadcrumnd -->
+
+        <!-- Modal Custom Searchbar --> 
+<div class="search-popup-custom">
+            <div class="modal fade" id="searchbar-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <input type="text" placeholder="Search Here...">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Custom Searchbar --> 
+
+        <!-- Blog Section -->
+        <section class="blog-section n0-bg position-relative pt-120 pb-120">
+            <div class="container">
+               <div class="project-details-thumb w-100">
+                    <img src="assets/images/service/project-details-big.png" alt="img" class="w-100">
+                    <div class="project-details-info d-flex flex-md-nowrap flex-wrap justify-content-between gap-5 p1-bg p-xxl-10 p-xl-8 p-lg-6 p-4">
+                        <div class="single-item">
+                            <h5 class="n0-clr mb-1">
+                                Client
+                            </h5>
+                            <span class="info-date fw-400 n0-clr">
+                                February 25, 2024
+                            </span>
+                        </div>
+                        <div class="cline"></div>
+                        <div class="single-item">
+                            <h5 class="n0-clr mb-1">
+                                Location
+                            </h5>
+                            <span class="info-date fw-400 n0-clr">
+                                Manchester CIty,
+                            </span>
+                        </div>
+                        <div class="cline"></div>
+                        <div class="single-item">
+                            <h5 class="n0-clr mb-1">
+                                Surface Area
+                            </h5>
+                            <span class="info-date fw-400 n0-clr">
+                                1634 sqft,
+                            </span>
+                        </div>
+                        <div class="cline"></div>
+                        <div class="single-item">
+                            <h5 class="n0-clr mb-1">
+                                Project Name
+                            </h5>
+                            <span class="info-date fw-400 n0-clr">
+                                Kitchen Remodeling
+                            </span>
+                        </div>
+                    </div>
+               </div>
+               <div class="content-box mb-xxl-10 mb-xl-8 mb-lg-7 mb-6 mt-xxl-10 mt-8">
+                    <h2 class="n900-clr mb-xxl-6 mb-4">
+                        About Project
+                    </h2>
+                    <p class="pra-clr mb-xxl-5 mb-3">
+                        Transform your kitchen into the heart of your home with our expert  remodeling services. At Construct360, we specialize in creating  functional and stylish kitchens tailored to your needs and preferences.  Whether you're looking to update your cabinetry, install modern  appliances, or reconfigure your layout for better flow, our team of  skilled professionals will guide you through every step of the process.  We focus on quality craftsmanship, using high-grade materials to ensure  lasting beauty and durability. From contemporary designs to classic  styles, we bring your vision to life while enhancing the value and  comfort of your home. Contact us today to start planning your dream  kitchen remodel and discover the difference expert renovation can make.
+                    </p>
+                    <p class="pra-clr">
+                        We focus on quality craftsmanship, using high-grade materials to ensure  lasting beauty and durability. From contemporary designs to classic  styles, we bring your vision to life while enhancing the value and  comfort of your home. Our comprehensive services include everything from  initial design consultation and space planning to precise installation  and finishing touches. Additionally, we prioritize efficient project management to minimize  disruption to your daily life. With a commitment to excellence and  attention to detail,
+                    </p>
+               </div>
+               <div class="row g-5 justify-content-between mb-xxl-9 mb-xl-8 mb-lg-7 mb-6">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="content-box">
+                            <h3 class="n900-clr mb-xxl-6 mb-4">
+                                Our Client’s Challenge
+                            </h3>
+                            <p class="pra-clr mb-xxl-6 mb-5">
+                                Our clients often face challenges such as tight budgets, strict  timelines, and complex design requirements. At Construct360, we  specialize in overcoming these obstacles through innovative solutions  and expert project management. We work closely with our clients 
+                            </p>
+                            <ul class="cmn-listing d-grid gap-xxl-4 gap-3" data-aos="fade-up" data-aos-duration="2000">
+                                <li class="d-flex align-items-center fw-500 gap-2 fs-seven n900-clr">
+                                    <span class="cmn-dot"></span>
+                                    Efficient and effective realization of client visions
+                                </li>
+                                <li class="d-flex align-items-center fw-500 gap-2 fs-seven n900-clr">
+                                    <span class="cmn-dot"></span>
+                                    Transformation of challenges into successful outcomes
+                                </li>
+                                <li class="d-flex align-items-center fw-500 gap-2 fs-seven n900-clr">
+                                    <span class="cmn-dot"></span>
+                                    Expert project management, Innovative problem-solving
+                                </li>
+                                <li class="d-flex align-items-center fw-500 gap-2 fs-seven n900-clr">
+                                    <span class="cmn-dot"></span>
+                                    Our clients often face challenges such as tight budgets,
+                                </li>
+                            </ul>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="project-video position-relative w-100">
+                            <img src="assets/images/service/project-challenge.png" alt="img" class="w-100">
+                            <a href="https://www.youtube.com/watch?v=lMJImKo-eZU" class="pro-vid popup-video d-center">
+                                <i class="ph-fill ph-play"></i>
+                            </a>
+                        </div>
+                    </div>
+               </div>
+               <div class="content-box mb-xxl-10 mb-xl-8 mb-lg-7 mb-6">
+                    <h4 class="n900-clr mb-xxl-6 mb-4">
+                        Our Approach And Solution
+                    </h4>
+                    <p class="pra-clr">
+                        At Construct360, our approach is centered around understanding and  addressing our clients' unique needs. We begin with a comprehensive  consultation to identify specific challenges and goals. Our team then  develops innovative, customized solutions using the latest construction  technologies and best practices. Through meticulous planning and expert  project management, we ensure timely and cost-effective execution. By  maintaining open communication and collaboration throughout the process,  we deliver high-quality results that exceed expectations. Trust  Construct360 to transform your vision into reality with precision and  excellence.
+                    </p>
+                </div>
+                <div class="content-box">
+                    <h4 class="n900-clr mb-xxl-6 mb-4">
+                        Result
+                    </h4>
+                    <p class="pra-clr">
+                        The renovation transformed the apartment into a modern, energy-efficient  space with a stunning design. The use of high-quality materials and  innovative solutions exceeded the client’s expectations. The project was  completed on time and within budget, resulting in a highly satisfied  client who praised our attention to detail and commitment to excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+
+    </main>
+    <!-- Common Body End -->
+
+    <!--Footer Quote-->
+    <section class="footer-quote">
+        <div class="foter-quote-wrapper position-relative">
+            <div class="container">
+               <div class="row">
+                    <div class="col-xl-10 position-relative">
+                        <div class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between gap-4">
+                            <h2 class="n0-clr">
+                                Get Started? Request Your Quote Today!
+                            </h2>
+                            <div class="d-flex align-items-center gap-xxl-4 gap-3">
+                                <a href="contact.html" class="cmn-btn text-capitalize n900-clr overflow-hidden d-inline-flex align-items-center n0-border gap-2 n0-bg pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Get A Quote
+                                    <i class="ph-bold ph-arrow-up-right"></i>
+                                </a>
+                                <a href="service.html" class="cmn-btn text-capitalize n0-clr overflow-hidden d-inline-flex align-items-center gap-2 n0-border pt-xxl-3 pt-xl-3 pt-3 pb-xxl-4 pb-xl-4 pb-3 px-xxl-8 px-lg-6 px-5">
+                                    Our Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer Quote-->
+
+    <!--Footer-->
+    <footer class="footer n900-bg cus-z1 position-relative pt-120">
+        <div class="footer-top position-relative pb-120">
+            <div class="container">
+                <div class="footer-top-inner">
+                    <div class="row g-lg-2 g-7">
+                        <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1600">
+                            <div class="footer-widget">
+                                <a href="index.html" class="footer-logo mb-xxl-6 mb-5 d-block">
+                                    <img src="assets/images/logo/logo-white.png" alt="img">
+                                </a>
+                                <p class="max-320 fw-400 n0-clr mb-xxl-6 mb-5 d-block">
+                                    At Construct360, we are dedicated to delivering exceptional construction  services with a focus on quality, 
+                                </p>
+                                <ul class="social-media d-flex align-items-center gap-xxl-3 gap-2">
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-facebook-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-instagram-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-youtube-logo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-center">
+                                            <i class="ph-fill ph-linkedin-logo"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="box">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                       Main Pages 
+                                    </h5>
+                                    <ul class="footer-link d-grid gap-xxl-3 gap-3">
+                                        <li>
+                                            <a href="index.html" class="n0-clr">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html" class="n0-clr">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service.html" class="n0-clr">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service-details.html" class="n0-clr">
+                                                Services Single
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html" class="n0-clr">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="n0-clr">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6" data-aos="zoom-in-right" data-aos-duration="2000">
+                            <div class="footer-widget d-flex">
+                                <div class="box">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                        Contact
+                                    </h5>
+                                    <ul class="contact-info-content d-grid gap-4">
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-envelope"></i>
+                                            <a href="#" class="n0-clr">
+                                                contact@construct360.com
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-phone-call"></i>
+                                            <a href="#" class="n0-clr">
+                                                (414)  687 - 5892 
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-2">
+                                            <i class="ph ph-map-pin"></i>
+                                            <a href="#" class="n0-clr">
+                                                794 Mcalliest St san fransci
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6" data-aos="zoom-in-right" data-aos-duration="1800">
+                            <div class="footer-widget ps-xxl-10 ps-xl-8 ps-lg-6 pe-4">
+                                <div class="box newsletter-footer">
+                                    <h5 class="mb-sm-6 mb-4 n0-clr">
+                                        Newsletter 
+                                    </h5>
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter Your Email">
+                                        <div class="btns">
+                                            <button type="submit" class="submit-btn p1-bg d-center">
+                                                Subscribe
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="n0-clr text-center copyright py-xxl-6 py-xl-5 py-5">
+                        Copyright 2024 &copy; <span class="currentYear"></span> <a href="index.html" class="p1-clr text-uppercase">CONSTURCT360</a> Theme, All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Shape -->
+        <img src="assets/images/footer/footer-discus.png" alt="img" class="footer-shape">
+    </footer>
+    <!--Footer-->
+    
+
+
+
+    <!-- js Jquery start -->
+    <script src="assets/js/plugins/jquery.js"></script>
+    <!-- js Viewport start -->
+    <script src="assets/js/plugins/viewpot.js"></script>
+    <!-- js Bootstrap start -->
+    <script src="assets/js/plugins/bootstrap.js"></script>
+    <!-- js Magnificpopup start -->
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <!-- js Swiper start -->
+    <script src="assets/js/plugins/swiper.js"></script>
+    <!-- js Odometer start -->
+    <script src="assets/js/plugins/odometer.js"></script>
+    <!-- js Aos Animation start -->
+    <script src="assets/js/plugins/aos.js"></script>
+    <!-- js Nice Select start -->
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <!-- js Phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- js Mian start -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

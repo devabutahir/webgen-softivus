@@ -1,0 +1,276 @@
+//Sercvice Section
+.service-section{
+    .swiper-slide{
+        border-left: 1px solid #fff;
+    }
+    .service-items{
+        transition: all 0.5s;
+        height: 548px;
+        img{
+            transition: all 0.4;
+        }
+        .box{
+            max-width: 403px;
+            margin: 0 auto;
+        }
+        .serial{
+            position: absolute;
+            top: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.active,
+        &:hover{
+           background: var(--p1); 
+           img{
+            transform: scale(1.04);
+           }
+           h4{
+            a{
+                color: var(--n0);
+            }
+           }
+        }
+    }
+    .swiper-slide-active{
+        .service-items{
+            background: var(--p1); 
+           img{
+            transform: scale(1.04);
+           }
+           h4{
+            a{
+                color: var(--n0);
+            }
+          }
+        }
+    }
+}
+.service-items0v2{
+    height: 448px !important;
+    img{
+        filter: brightness(0);
+        transition: all 0.4s;
+    }
+    h4,a{
+        transition: all 0.5s;
+    }
+    &:hover{
+        img{
+            filter: brightness(25);
+        }
+        .serial{
+            color: var(--n0);
+        }
+        h4,a{
+            color: var(--n0);
+        }
+        p{
+            color: var(--n0);
+            opacity: 0.8;
+        }
+    }
+}
+.service-section02{
+    .about-agency-top{
+        p{
+            max-width: 416px;
+        }
+    }
+    .srecive-get{
+        form{
+            input{
+                background: var(--n0);
+                border: unset;
+                outline: none;
+                padding: 12px 24px;
+            }
+        }
+    }
+}
+.service-step-item{
+    .step-line{
+        width: 100%;
+        height: 1px;
+        background: var(--p1);
+        &::before{
+            position: absolute;
+            left: 3.4px;
+            top: -7.4px;
+            content: "";
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            z-index: 1;
+        }
+        &::after{
+            position: absolute;
+            top: -12px;
+            left: 0;
+            content: "";
+            background: var(--p1);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+    }
+    .step-pending{
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+//Sercvice Section
+
+//Protfolio Section
+.protfolio-section{
+    z-index: 1;
+    .protfolio-item{
+        transition: all 0.5s;
+        .thumb{
+            position: relative;
+            .cmn-arros{
+                @include box(100);
+                background: var(--p1);
+                border-radius: 50%;
+                transition: all 0.5s;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                visibility: hidden;
+                opacity: 0;
+                i{
+                    font-size: 34px;
+                    color: var(--n0);
+                    transition: all 0.4s;
+                }
+                &:hover{
+                    background: #eb585d;
+                }
+            }
+            &::before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0%;
+                height: 100%;
+                content: "";
+                background: rgba(0, 0, 0, 0.421);
+                transition: all 0.4s;
+            }
+        }
+        .content{
+            .p-line{
+               width: 19px;
+               height: 1px;
+               background: var(--pra-clr); 
+            }
+        }
+        &:hover{
+            .thumb{
+                position: relative;
+                .cmn-arros{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                &::before{
+                    width: 100%;
+                }    
+            }
+            .content{
+                h4{
+                    a{
+                        text-decoration: underline;
+                        color: var(--p1);
+                    }
+                }
+                .p-line{
+                   width: 19px;
+                   height: 1px;
+                   background: var(--pra-clr); 
+                }
+            }
+        }
+    }
+    .cmn-btn{
+        width: 219px;
+    }
+    .protfolio-element{
+        position: absolute;
+        right: 40px;
+        top: 180px;
+        z-index: -1;
+    }
+    @include maxQuery(1399){
+        .protfolio-element{
+            right: 10px;
+            top: 10px;
+            width: 250px;
+        }
+        .protfolio-item{
+            transition: all 0.5s;
+            .thumb{
+                position: relative;
+                .cmn-arros{
+                    @include box(60);
+                    i{
+                        font-size: 25px;
+                        color: var(--n0);
+                        transition: all 0.4s;
+                    }
+                }
+            }
+        } 
+    }
+}
+//Protfolio Section
+
+//Review Section
+.review-content{
+    z-index: 1;
+    .review-quote{
+        position: absolute;
+        right: -190px;
+        top: -60px;
+        z-index: -1;
+    }
+    .slider-btn{
+        .cmn-width-swiper{
+            @include box(60);
+            background: rgba(255, 255, 255, 0.10);
+            border: unset;
+            border-radius: 500%;
+            &.active,
+            &:hover{
+                background: var(--p1);
+                i{
+                    color: var(--n0);
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .slider-btn{
+            .cmn-width-swiper{
+                @include box(44);
+            }
+        }
+    }
+    @include maxQuery(767){
+        .display-two{
+            font-size: 26px;
+        }
+    }
+}
+//Review Section
+
+//Sponsor Section
+.sponsor-item{
+    @include maxQuery(575){
+        width: 120px;
+        img{
+            width: 100%;
+        }
+    }
+}
+//Sponsor Section

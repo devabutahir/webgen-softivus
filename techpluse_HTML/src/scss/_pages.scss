@@ -1,0 +1,558 @@
+// home page
+// hero video section
+.home-hero-section {
+
+    .video-container {
+        overflow: hidden;
+        height: 70vh;
+        width: 100%;
+        margin-top: 50px;
+
+        @include screen(sm) {
+            height: 80vh;
+            margin-top: 0;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            z-index: 1;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 60.17%);
+                z-index: -1;
+            }
+        }
+    }
+
+    .text-slider {
+        .star-icon {
+            animation: rotate 5s linear infinite;
+        }
+    }
+}
+
+.circle-text-body {
+    width: 80px;
+    height: 80px;
+    background: $n0;
+    border: 1px solid $n900;
+    transform: translate(-50%, -100%);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+
+    &.circle-text-bottom {
+        transform: translate(-50%, -50%);
+    }
+
+
+    @include screen(lg) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include screen(xl) {
+        width: 120px;
+        height: 120px;
+    }
+
+    @include screen(xxl) {
+        width: 160px;
+        height: 160px;
+    }
+
+    @include screen(3xl) {
+        width: 180px;
+        height: 180px;
+    }
+
+    @include screen(4xl) {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-text-shape {
+        @include box(40);
+        background: $n900;
+
+
+        @include screen(lg) {
+            @include box(40);
+        }
+
+        @include screen(xl) {
+            @include box(60);
+        }
+
+        @include screen(xxl) {
+            @include box(80);
+        }
+
+        @include screen(3xl) {
+            @include box(100);
+        }
+
+
+        @include screen(4xl) {
+            @include box(120);
+        }
+    }
+
+    .circle-text {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        animation: rotateText 10s linear infinite;
+        z-index: 1;
+
+        p {
+            transform: translate(50%, 5px);
+            text-transform: uppercase;
+
+            @include screen(lg) {
+                transform: translate(50%, 0px);
+            }
+
+            @include screen(xl) {
+                transform: translate(50%, 0px);
+            }
+
+            @include screen(xxl) {
+                transform: translate(50%, 0px);
+            }
+
+            @include screen(3xl) {
+                transform: translate(50%, 0px);
+            }
+
+            @include screen(4xl) {
+                transform: translate(50%, 5px);
+            }
+
+            span {
+                position: absolute;
+                transform-origin: 0 55px;
+
+                @include screen(lg) {
+                    transform-origin: 0 50px;
+                    font-size: 10px;
+                }
+
+                @include screen(xl) {
+                    transform-origin: 0 60px;
+                    font-size: 12px;
+                }
+
+                @include screen(xxl) {
+                    transform-origin: 0 80px;
+                    font-size: 16px;
+                }
+
+                @include screen(3xl) {
+                    transform-origin: 0 90px;
+                }
+
+                @include screen(4xl) {
+                    transform-origin: 0 95px;
+                }
+            }
+        }
+    }
+}
+
+
+// service section
+.service-section {
+
+    .service-card {
+        position: relative;
+
+        .card-icon {
+            @include box(60);
+            background: $primary-300;
+            color: $n900;
+            transition: $transition;
+        }
+
+        &:hover {
+            .card-icon {
+                background: $n900;
+                color: $n0;
+            }
+        }
+    }
+
+    .service-card-wrapper {
+        position: relative;
+
+        @include screen(lg) {
+            &:nth-child(even) {
+                border: 1px solid $n900;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .service-card {
+                border: 1px solid $n900;
+            }
+        }
+    }
+}
+
+// why choose us
+.why-choose-us-section {
+    .award-badge-area {
+        max-width: 300px;
+        width: 100%;
+        transform: translateY(50%);
+    }
+
+    .star-1 {
+        max-width: 80px;
+        animation: rotateY 5s infinite linear;
+    }
+
+    .star-2 {
+        max-width: 60px;
+        animation: rotateX 5s infinite linear;
+    }
+}
+
+.counter-progress-area {
+    svg.radial-progress {
+        height: auto;
+        max-width: 200px;
+        width: 100%;
+        transform: rotate(-90deg);
+    }
+
+    svg.radial-progress circle {
+        fill: transparent;
+        stroke: $primary-300;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 4;
+    }
+
+    svg.radial-progress circle.incomplete {
+        stroke: $n900;
+    }
+
+    svg.radial-progress circle.complete {
+        stroke-dasharray: 219.91148575129;
+    }
+
+    svg.radial-progress text {
+        fill: $secondary-50;
+        font-weight: 800;
+        text-anchor: middle;
+    }
+}
+
+// testimonial section
+.testimonial-section {
+    .bolt-shape {
+        max-width: 100px;
+        width: 100%;
+    }
+
+    .testimonial-slider {
+        .swiper-slide-active {
+            background: $primary-300;
+        }
+    }
+}
+
+// team section 
+.team-card {
+    .team-img {
+        background: $primary-100;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            transform-origin: right;
+            transform: scaleX(0);
+            background: $primary-300;
+        }
+
+        .team-social-list {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            .icon {
+                @include box(60);
+                border-radius: unset;
+                background: $primary-300;
+                color: $n900;
+                transition: $transition;
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    background: $secondary-50;
+                }
+
+                &:hover {
+                    color: $n0;
+
+                    &::before {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+            }
+
+            .social-list {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+                transition: $transition-slow;
+            }
+
+            &:hover {
+                .social-list {
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        &:hover {
+
+            &::before {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
+}
+
+// recent project section
+.recent-project-section {
+    .project-info {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .project-img {
+        max-width: 625px;
+        width: 100%;
+
+        @media (max-width: 575px) {
+            max-height: 300px;
+            object-fit: cover;
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+// accordion
+.accordion-card {
+    overflow: hidden;
+    background: $primary-100;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: right;
+        transform: scaleX(0);
+        background: $primary-300;
+    }
+
+    .content {
+        transform: translateX(100%);
+        transition: $transition-slow;
+    }
+
+    .toggle-icon {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+
+        &::before {
+            content: '\e3d4';
+            font-family: 'Phosphor-Fill';
+            font-weight: 800;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            color: $n900;
+            z-index: -1;
+            transition: $transition;
+        }
+
+    }
+
+    &:hover {
+        &::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .content {
+            transform: translateX(0);
+        }
+
+        .toggle-icon {
+            &::before {
+                content: "\e32a";
+            }
+        }
+    }
+}
+
+// core value section
+.core-value-card {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transform-origin: bottom;
+        transform: scaleY(0);
+        background: $primary-300;
+    }
+
+    .icon {
+        @include box(36);
+        background: $primary-300;
+        color: $n900;
+        transition: $transition;
+        position: relative;
+        z-index: 1;
+
+        @include screen(sm) {
+            @include box(48);
+        }
+
+        @include screen(md) {
+            @include box(60);
+        }
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleY(1);
+            transform-origin: top;
+        }
+
+        .icon {
+            color: $n0;
+            background: $n1000;
+        }
+    }
+}
+
+// inner page hero section  
+.inner-hero-section {
+    .tree-vector {
+        .tree-vector-img-1 {
+            animation: opacityPulse 6s infinite linear;
+        }
+
+        .tree-vector-img-2 {
+            animation: opacityPulse 6s infinite linear;
+        }
+    }
+}
+
+.comment-thumb {
+    @include box(60);
+}
+
+.team-hr-line {
+    height: 1px;
+    width: 100%;
+    background: $n900;
+
+    @include screen(sm) {
+        // display: none;
+        height: 50px;
+        width: 1px;
+        background: $n900;
+    }
+}
+
+.office-location-card {
+    transition: $transition;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: $transition;
+        background: $primary-100;
+        transform: scale(0);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        background: $primary-300;
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+}

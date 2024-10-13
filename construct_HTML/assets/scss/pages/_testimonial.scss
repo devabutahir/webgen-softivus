@@ -1,0 +1,149 @@
+// Testimonia Style
+
+.testimonial-spacig-wrap{
+    margin-right: -16%;
+    margin-left: 16%;
+    @include maxQuery(1700){
+        margin-right: -12%;
+        margin-left: 12%;
+    }
+    @include maxQuery(1600){
+        margin-right: -0%;
+        margin-left: 0%;
+    }
+}
+//Service Slide Section
+.service-section-slide{
+    .slider-btn{
+      button{
+        &.active,
+        &:hover{
+          i{
+            color: var(--n0);
+          }
+        }
+      }
+    }
+    .blue-print-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        animation: lf 2s linear infinite;
+    }
+    .blue-print-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        animation: lf 2s linear infinite;
+    }
+}
+.browse-btn{
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+  //Service Slide Section
+.testimonial-item{
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    transition: all 0.5s;
+    .service-icon{
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+    .quotes{
+        font-size: 56px;
+        color: var(--n0);
+        opacity: 0.2;
+    }
+    .content{
+        p{
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .icon{
+            @include box(32);
+            transition: all 0.4s;
+            i{
+             font-size: 16px;
+             color: var(--n0);
+            }
+        }
+    }
+    &:hover{
+        background: var(--p1);
+        .content{
+            h5,a{
+                color: var(--n0);
+            }
+            p{
+                color: var(--n0);
+            }
+            .icon{
+                @include box(28);
+                background: var(--n0);
+                i{
+                 color: var(--n900);
+                }
+            }
+        }
+    }
+}
+.learnmore{
+    .icon{
+        @include box(32);
+        transition: all 0.4s;
+        i{
+         font-size: 16px;
+         color: var(--n0);
+        }
+    }
+}
+// Testimonia Style
+
+// Testimonia Style
+.testimonials-sectionv2{
+    .testimoinial-v2thumb{
+        height: 100%;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .shape-testi{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .custom-quote{
+        position: absolute;
+        right: 44px;
+        top: 44px;
+    }
+    .slider-btn{
+        position: absolute;
+        right: 40px;
+        bottom: 60px;
+        z-index: 1;
+        button{
+            @include box(46);
+            border: 1px solid var(--n0);
+            &.active{
+                background: var(--n0);
+                i{
+                    color: var(--n900);
+                }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .slider-btn{
+            right: 20px;
+            bottom: 20px;
+            button{
+                @include box(34);
+            }
+        }
+    }
+}
+// Testimonia Style
+

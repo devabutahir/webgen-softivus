@@ -1,0 +1,30 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
+// default root
+:root {
+	--body-font: 'Lexend', sans-serif;
+	--head-font: 'Cormorant Garamond', serif;
+
+	--transition: all 0.5s ease-in-out;
+	--transition-sec: all 1.8s ease-in-out;
+	--transition-third: all 2.2s ease-in-out;
+
+	/* Color styles */
+	--p1: 11, 19, 21;
+	--p2: 255, 222, 159;
+	
+	--s1: 153, 169, 173;
+	--s2: 40, 49, 51;
+	--s3: 255, 212, 12;
+	--s4: 12, 22, 26
+	--s5: 40, 49, 51;
+	
+	--n1: 255, 255, 255;
+
+	--gradient-p1: linear-gradient(90deg, rgba(255, 222, 159, 0.47) 0%, rgba(255, 222, 159, 0.12) 51.11%, rgba(255, 222, 159, 0.00) 100%);
+	--box-shadow-p1: 0px 6px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
